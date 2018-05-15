@@ -19,12 +19,12 @@ $(document).ready(function() {
 		teal: objColors.teal,
 		textcolor: '#5a5e63',
 		gray: objColors.gray
-	}
+	};
 
 	//generate random number for charts
 	randNum = function(){
 		return (Math.floor( Math.random()* (1+150-50) ) ) + 80;
-	}
+	};
 
 	//------------- LIne charts with dots -------------//
 	$(function() {

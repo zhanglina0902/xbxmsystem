@@ -19,7 +19,7 @@ $(document).ready(function() {
 		teal: objColors.teal,
 		textcolor: '#5a5e63',
 		gray: objColors.gray
-	}
+	};
 
 	//------------- Sparklines -------------//
 	$('#usage-sparkline').sparkline([35,46,24,56,68, 35,46,24,56,68], {
@@ -60,19 +60,5 @@ $(document).ready(function() {
     //first is line width, size for pie, animated time , and colours object for theming.
 	initPieChart(10,40, 1500, colours);
 
- 	
 });
 
-//Setup easy pie charts in sidebar
-var initPieChart = function(lineWidth, size, animateTime, colours) {
-	$(".pie-chart").easyPieChart({
-        barColor: colours.dark,
-        borderColor: colours.dark,
-        trackColor: '#d9dde2',
-        scaleColor: false,
-        lineCap: 'butt',
-        lineWidth: lineWidth,
-        size: size,
-        animate: animateTime
-    });
-}

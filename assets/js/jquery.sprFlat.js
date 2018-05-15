@@ -101,13 +101,13 @@
                 openEffect: 'flipInY',//open effect for menu see http://daneden.github.io/animate.css/
             }
 
-        }
+        };
 
         // current instance of the object
         var plugin = this;
 
         // this will hold the merged default, and user-provided options
-        plugin.settings = {}
+        plugin.settings = {};
 
         var $element = $(element), // reference to the jQuery version of DOM element
             element = element;    // reference to the actual DOM element
@@ -1065,13 +1065,11 @@
             var breadcrumb = $('#crumb');
             var rightArrow = '<i class="en-arrow-right7"></i>';
             var homeIcon = '<i class="im-home"></i>';
-            
             var navel = $('#sideNav>li a.active');
             var navsub = navel.closest('.nav.sub');
             //empty curmb
             breadcrumb.empty();
-            breadcrumb.append('<li>'+homeIcon+'<a href="index.html">Home</a>'+rightArrow+'</li>');
-
+            breadcrumb.append('<li>'+homeIcon+'<a href="index.html">首页</a>'+rightArrow+'</li>');
             if (navsub.closest('li').hasClass('hasSub')) {
                 //get previous
                 navel1 = navsub.prev('a.expand');
@@ -1113,7 +1111,7 @@
                   document.webkitCancelFullScreen();
                 }
             }
-        }
+        };
 
         plugin.toDoWidget = function () {
             var todos = $('.todo-widget');

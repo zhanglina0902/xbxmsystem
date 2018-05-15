@@ -25,7 +25,7 @@ $(document).ready(function() {
  	//Disable certain links
     $('a[href^=#]').click(function (e) {
         e.preventDefault()
-    })
+    });
 
     //------------- Highlight code  -------------//
     hljs.initHighlightingOnLoad();
@@ -138,16 +138,6 @@ $(document).ready(function() {
     $("[data-toggle=popover]").popover ();
 
     //------------- Qick post wysiwyg editor and tags -------------//
-    tinymce.init({
-        selector: ".wysiwyg",
-        menubar : false,
-        plugins: [
-            "advlist autolink lists link image charmap print preview anchor",
-            "searchreplace visualblocks code fullscreen",
-            "insertdatetime media table contextmenu paste"
-        ],
-        toolbar: "bold italic strikethrough bullist numlist blockquote hr alignleft aligncenter alignright alignjustify link unlink code image media fullscreen"
-    });
-    $('.tags1').tagsInput({width: 'auto'});
+
 
 });

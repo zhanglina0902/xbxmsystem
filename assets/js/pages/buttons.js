@@ -2,8 +2,8 @@
 $(document).ready(function() {
 
 	$('#loading-state').click(function () {
-	    var btn = $(this)
-	    btn.button('loading')
+	    var btn = $(this);
+	    btn.button('loading');
 	    $.ajax().always(function () {
 	      btn.button('reset')
 	    });
@@ -26,7 +26,7 @@ $(document).ready(function() {
 		teal: '#97d3c5',
 		textcolor: '#5a5e63',
 		gray: '#f3f5f6'
-	}
+	};
 
 	//------------- Sparklines -------------//
 	$('#usage-sparkline').sparkline([35,46,24,56,68, 35,46,24,56,68], {
