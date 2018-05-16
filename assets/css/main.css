@@ -1050,6 +1050,7 @@ body.error-page h1.error-number {
 }
 #content .content-wrapper .outlet {
   position: relative;
+  padding: 0 20px;
 }
 #content .content-wrapper .heading:before,
 #content .content-wrapper .heading:after {
@@ -1155,6 +1156,17 @@ body.error-page h1.error-number {
 #content .content-wrapper .heading .option-buttons #lock-timer {
   vertical-align: text-bottom;
 }
+
+/*footer*/
+.footer{
+  text-align: center;
+  padding:15px;
+  background: #f3f5f6;
+}
+.footer a{
+  margin-left:15px;
+}
+
 /* -----------------------------------------
    Template elements
 ----------------------------------------- */

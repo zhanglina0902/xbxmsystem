@@ -1,6 +1,7 @@
 /* -----------------------------------------
    Custom.css - put your own changes here 
 ----------------------------------------- */
+
 .topmenu{
     list-style: none;
     line-height: 20px;
@@ -18,6 +19,19 @@
     color: #768399;
     text-decoration: none;
 }
-.d-md-flex{
-    display: flex;
+
+
+/*空白页面*/
+.emptypage{
+    text-align: center;
+    position: relative;
+    margin-top:100px;
+}
+.emptypage .emptyimg i{
+    display: block;
+    font-size:120px;
+}
+.apply-textbox{
+    border:1px solid #e4e9eb;
+    padding:20px;
 }
