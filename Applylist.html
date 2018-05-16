@@ -2,7 +2,7 @@
 <html lang="n">
     <head>
         <meta charset="utf-8">
-        <title>申请列表</title>
+        <title>用人申请列表</title>
         <!-- Mobile specific metas -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <!-- Force IE9 to render in normal mode -->
@@ -52,13 +52,13 @@
                                     <img class="user-avatar" src="assets/img/avatars/48.jpg" alt="admin">admin
                                 </a>
                                 <ul class="dropdown-menu right" role="menu">
-                                    <li><a href="profile.html"><i class="st-user"></i>我的账号</a>
+                                    <li><a href="#"><i class="st-user"></i>我的账号</a>
                                     </li>
-                                    <li><a href="file.html"><i class="st-cloud"></i>我的任务</a>
+                                    <li><a href="#"><i class="st-cloud"></i>我的任务</a>
                                     </li>
                                     <li><a href="#"><i class="ec-mail"></i>我的消息</a>
                                     </li>
-                                    <li><a href="login.html"><i class="im-exit"></i>退出</a>
+                                    <li><a href="#"><i class="im-exit"></i>退出</a>
                                     </li>
                                 </ul>
                             </li>
@@ -79,7 +79,7 @@
                     <li>
                         <a href="#" >招聘管理<i class="fa-zoom-in"></i></a>
                         <ul class="nav sub">
-                            <li ><a href="Apply.html" ><i class="ec-pencil2" ></i>用人申请</a></li>
+                            <li ><a href="Apply.html" class="active"><i class="ec-pencil2" ></i>用人申请</a></li>
                             <li><a href="#"><i class="im-checkbox-checked"></i>发布招聘</a></li>
                             <li><a href="#"><i class="im-wand"></i>应聘者管理</a></li>
                             <li><a href="#"><i class="fa-user"></i>人才库</a></li>
@@ -152,7 +152,7 @@
                 <div class="row  heading">
                     <div class="col-lg-12 col-md-12">
                         <ul class="topmenu">
-                            <li><a href="">用人申请</a></li>
+                            <li><a href="" class="active">用人申请</a></li>
                             <li><a href="">发布招聘</a></li>
                             <li><a href="">应聘者管理</a></li>
                             <li><a href="">人才库</a></li>
@@ -169,239 +169,300 @@
                 <!-- End .row -->
 
                 <div class="outlet">
-                    <!-- Start .outlet -->
-                    <!-- Page start here ( usual with .row ) -->
-                    <div class="emptypage animated fadeInDown" style="display: none">
-                        <div class="text-center mb25 emptyimg"><i class="br-monitor"></i></div>
-                        <p class="text-center s20">内容为空赶快添加内容吧</p>
-                        <div class="text-center mt25">
-                            <div class="btn-group">
-                                <a href="" class="btn btn-primary">立即申请</a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="row" >
+
+                   <div class="bg-gray p15 mb25">
+                       <div class="row">
+                           <div class="col-lg-12  mb10 ">
+                               <div class="">
+                                   <form class="form-horizontal group-border " role="form">
+                                       <div class="form-group">
+                                           <div class="col-lg-12 col-md-12">
+                                               <div class="row">
+                                                   <div class="col-lg-2 col-md-2 mb5">
+                                                       <select class="form-control">
+                                                           <option value="申请部门">申请部门</option>
+                                                           <option value="美选">美选</option>
+                                                           <option value="精选">精选</option>
+                                                           <option value="优选">优选</option>
+                                                           <option value="集团系统">集团系统</option>
+                                                       </select>
+                                                   </div>
+                                                   <div class="col-lg-2 col-md-2 mb5">
+                                                       <select class="form-control">
+                                                           <option value="申请职位">申请职位</option>
+                                                           <option value="运营">运营</option>
+                                                           <option value="销售">销售</option>
+                                                           <option value="产品">产品</option>
+                                                           <option value="设计">设计</option>
+                                                           <option value="技术">技术</option>
+                                                           <option value="人事">人事</option>
+                                                           <option value="其他">其他</option>
+                                                       </select>
+                                                   </div>
+                                                   <div class="col-lg-2 col-md-2 mb5">
+                                                       <select class="form-control">
+                                                           <option value="申请人">申请人</option>
+                                                           <option value="李佳">李佳</option>
+                                                           <option value="张鹏">张鹏</option>
+                                                           <option value="王帅">王帅</option>
+                                                       </select>
+                                                   </div>
+                                                   <div class="col-lg-2 col-md-2 mb5">
+                                                       <select class="form-control">
+                                                           <option value="申请时间">申请时间</option>
+                                                           <option value="2018-5-10">2018-5-10</option>
+                                                           <option value="2018-5-11">2018-5-11</option>
+                                                           <option value="2018-5-12">2018-5-12</option>
+                                                       </select>
+                                                   </div>
+                                                   <div class="col-lg-2 col-md-2 mb5">
+                                                       <select class="form-control">
+                                                           <option value="审核状态">审核状态</option>
+                                                           <option value="待审核">待审核</option>
+                                                           <option value="审核中">审核中</option>
+                                                           <option value="审核通过">审核通过</option>
+                                                           <option value="未通过">未通过</option>
+                                                           <option value="全部">全部</option>
+
+                                                       </select>
+                                                   </div>
+                                                   <div class="col-lg-2 col-md-2 mb5">
+                                                       <select class="form-control">
+                                                           <option value="是否支持内推">是否支持内推</option>
+                                                           <option value="是">是</option>
+                                                           <option value="否">否</option>
+
+                                                       </select>
+                                                   </div>
+                                                   <div class="col-lg-2 col-md-2 mb5">
+                                                       <select class="form-control">
+                                                           <option value="是否支持内推">是否支持转岗</option>
+                                                           <option value="是">是</option>
+                                                           <option value="否">否</option>
+
+                                                       </select>
+                                                   </div>
+
+                                                   <div class="col-lg-4 col-md-4">
+                                                       <label class="checkbox-inline">
+                                                           <input type="checkbox" value="option2" checked="checked">增补
+                                                       </label>
+                                                       <label class="checkbox-inline">
+                                                           <input type="checkbox" value="option2" checked="checked">增编
+                                                       </label>
+                                                   </div>
+
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </form>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="row">
+                           <div class="col-lg-4 col-md-4">
+                               <button type="button" class="btn btn-default">批量启用</button>
+                               <button type="button" class="btn btn-default">批量禁用</button>
+                               <button type="button" class="btn btn-default">批量删除</button>
+                               <button type="button" class="btn btn-default">批量导出</button>
+                           </div>
+                           <div class="col-lg-4 col-md-4 search-applylist">
+                               <form class="">
+                                   <input type="text" name="search" placeholder="搜索内容">
+                                   <button type="submit"><i class="ec-search"></i></button>
+                               </form>
+                           </div>
+                       </div>
+                   </div>
+
+
+
+                    <div class="row">
                         <!-- Start .row -->
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <!-- Start col-lg-12 -->
-                            <div class="panel panel-default mb50">
+                        <div class="col-lg-12 col-md-12">
+                            <!-- col-lg-6 start here -->
+                            <div class="panel panel-default plain">
                                 <!-- Start .panel -->
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">申请内容</h3>
+                                <div class="panel-heading white-bg">
                                 </div>
                                 <div class="panel-body">
-                                    <form class="form-horizontal group-border hover-stripped" role="form">
-                                        <div class="form-group">
-                                            <label class="col-lg-2 col-md-2 control-label">职位类别</label>
-                                            <div class="col-lg-10 col-md-10">
-                                                <div class="row">
-                                                    <div class="col-lg-4 col-md-4">
-                                                        <select class="form-control">
-                                                            <option value="运营">运营</option>
-                                                            <option value="销售">销售</option>
-                                                            <option value="产品">产品</option>
-                                                            <option value="设计">设计</option>
-                                                            <option value="技术">技术</option>
-                                                            <option value="人事">人事</option>
-                                                            <option value="其他">其他</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-lg-2 col-md-2 control-label">工作地点</label>
-                                            <div class="col-lg-10 col-md-10">
-                                                <div class="row">
-                                                    <div class="col-lg-4 col-md-4">
-                                                        <select class="form-control">
-                                                            <option value="北京">北京</option>
-                                                            <option value="成都">成都</option>
-                                                            <option value="山东">山东</option>
-                                                            <option value="河南">河南</option>
-                                                            <option value="湖北">湖北</option>
-                                                            <option value="广州">广州</option>
-                                                            <option value="上海">上海</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-lg-2 col-md-2 control-label">申请部门</label>
-                                            <div class="col-lg-10 col-md-10">
-                                                <div class="row">
-                                                    <div class="col-lg-4 col-md-4">
-                                                        <select class="form-control">
-                                                            <option value="设计部">设计部</option>
-                                                            <option value="科创中心">科创中心</option>
-                                                            <option value="人力资源">人力资源</option>
-                                                            <option value="财务部">财务部</option>
-                                                            <option value="销售部">销售部</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-lg-4 col-md-4">
-                                                        <select class="form-control">
-                                                            <option value="优选">优选</option>
-                                                            <option value="美选">美选</option>
-                                                            <option value="精选">精选</option>
-                                                            <option value="OA">OA</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-lg-4 col-md-4">
-                                                        <select class="form-control">
-                                                            <option value="产品">产品</option>
-                                                            <option value="设计">设计</option>
-                                                            <option value="java">java</option>
-                                                            <option value="前端">前端</option>
-                                                            <option value="运维">运维</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-lg-2 col-md-2 control-label">工作年限</label>
-                                            <div class="col-lg-4 col-md-4 form-inline">
-                                                <input type="text" class="form-control" placeholder="工作年限"><span> 年以上</span>
-                                            </div>
-                                            <div class="col-lg-4 col-md-4">
-                                                <label class="checkbox-inline">
-                                                    <input type="checkbox" value="option2" checked="checked">不限年限
+                                    <table class="table table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th class="per5">
+                                                <label class="checkbox">
+                                                    <input class="check-all" type="checkbox" value="option1">
                                                 </label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group d-md-flex">
-                                            <label class="col-lg-2 col-md-2 control-label">需求人数</label>
-                                            <div class="col-lg-4 col-md-4 form-inline">
-                                                <input type="text" class="form-control" placeholder="20">
-                                                <span> 人</span>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-lg-2 col-md-2 control-label">年龄</label>
-                                            <div class="col-lg-10 col-md-10 form-inline">
-                                                <input type="text" class="form-control" placeholder="23">
-                                                <span>——</span>
-                                                <input type="text" class="form-control" placeholder="35">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-lg-2 col-md-2 col-sm-12 control-label">性别</label>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="radio1" value="option1">女
-                                            </label>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="radio1" value="option2" checked="checked">男
-                                            </label>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-lg-2 col-md-2 control-label">学历要求</label>
-                                            <div class="col-lg-10 col-md-10">
-                                                <div class="row">
-                                                    <div class="col-lg-4 col-md-4">
-                                                        <select class="form-control">
-                                                            <option value="高中及以下">高中及以下</option>
-                                                            <option value="大专">大专</option>
-                                                            <option value="大专及以上">大专及以上</option>
-                                                            <option value="本科">本科</option>
-                                                            <option value="本科及以上">本科及以上</option>
-                                                            <option value="硕士">硕士</option>
-                                                            <option value="硕士及以上">硕士及以上</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-lg-6 col-md-6">
-                                                        <label class="checkbox-inline">
-                                                            <input type="checkbox" value="option2" >全日制本科
-                                                        </label>
-                                                        <label class="checkbox-inline">
-                                                            <input type="checkbox" value="option2" >985
-                                                        </label>
-                                                        <label class="checkbox-inline">
-                                                            <input type="checkbox" value="option2" checked="checked">211
-                                                        </label>
-                                                    </div>
+                                            </th>
+                                            <th class="">编号</th>
+                                            <th class="">申请部门</th>
+                                            <th class="">申请岗位</th>
+                                            <th class="text-center">申请人</th>
+                                            <th class="text-center">申请时间</th>
+                                            <th class="text-center">是否增补</th>
+                                            <th class="text-center">申请增编</th>
+                                            <th class="text-center">审批状态</th>
+                                            <th class="text-center">内推</th>
+                                            <th class="text-center">内部转岗</th>
+                                            <th class="text-center">操作</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <label class="checkbox">
+                                                    <input class="check" type="checkbox" value="option2">
+                                                </label>
+                                            </td>
+                                            <td>PA20180510095</td>
+                                            <td>科创中心</td>
+                                            <td>前端工程师</td>
+                                            <td class="text-center">张鹏</td>
+                                            <td class="text-center">2018-5-10</td>
+                                            <td class="text-center">否</td>
+                                            <td class="text-center">是</td>
+                                            <td class="text-center">待审核</td>
+                                            <td class="text-center">是</td>
+                                            <td class="text-center">是</td>
+                                            <td class="text-center">
+                                                <a href="" class="mr5">查看</a>
+                                                <a href="" class="mr5 color-green">启用</a>
+                                                <a href="" class="mr5">停止</a>
+                                                <a href="" class="mr5 color-red">删除</a>
+                                            </td>                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="checkbox">
+                                                    <input class="check" type="checkbox" value="option2">
+                                                </label>
+                                            </td>
+                                            <td>PA20180510095</td>
+                                            <td>科创中心</td>
+                                            <td>前端工程师</td>
+                                            <td class="text-center">张鹏</td>
+                                            <td class="text-center">2018-5-10</td>
+                                            <td class="text-center">否</td>
+                                            <td class="text-center">是</td>
+                                            <td class="text-center">审核中</td>
+                                            <td class="text-center">是</td>
+                                            <td class="text-center">否</td>
+                                            <td class="text-center">
+                                                <a href="" class="mr5">查看</a>
+                                                <a href="" class="mr5 color-green">启用</a>
+                                                <a href="" class="mr5">停止</a>
+                                                <a href="" class="mr5 color-red">删除</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="checkbox">
+                                                    <input class="check" type="checkbox" value="option2">
+                                                </label>
+                                            </td>
+                                            <td>PA20180510095</td>
+                                            <td>科创中心</td>
+                                            <td>前端工程师</td>
+                                            <td class="text-center">张鹏</td>
+                                            <td class="text-center">2018-5-10</td>
+                                            <td class="text-center">否</td>
+                                            <td class="text-center">是</td>
+                                            <td class="text-center">审核通过</td>
+                                            <td class="text-center">否</td>
+                                            <td class="text-center">是</td>
+                                            <td class="text-center">
+                                                <a href="" class="mr5">查看</a>
+                                                <a href="" class="mr5 color-green">启用</a>
+                                                <a href="" class="mr5">停止</a>
+                                                <a href="" class="mr5 color-red">删除</a>
+                                            </td>
+                                        </tr>
 
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-lg-2 col-md-2 control-label">职位类型</label>
-                                            <div class="col-lg-10 col-md-10">
-                                                <div class="row">
-                                                    <div class="col-lg-4 col-md-4">
-                                                        <select class="form-control">
-                                                            <option value="全职">全职</option>
-                                                            <option value="兼职">兼职</option>
-                                                            <option value="实习">实习</option>
 
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-lg-2 col-md-2 control-label">专业要求</label>
-                                            <div class="col-lg-10 col-md-10">
-                                                <div class="row">
-                                                    <div class="col-lg-4 col-md-4">
-                                                        <select class="form-control">
-                                                            <option value="计算机">计算机</option>
-                                                            <option value="艺术设计">艺术设计</option>
-                                                            <option value="人力资源">人力资源</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-lg-2 col-md-2 col-sm-12 control-label">岗位职责</label>
-                                            <div class="col-lg-10 col-md-10">
-                                                <textarea class="form-control" rows="5"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-lg-2 col-md-2 col-sm-12 control-label">其他要求</label>
-                                            <div class="col-lg-10 col-md-10">
-                                                <textarea class="form-control limitTextarea" maxlength="300" rows="3"></textarea>
-                                                <span class="help-block">字数300字以内</span>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-lg-2 col-md-2 col-sm-12 control-label">是否支持内推</label>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="radio2" value="option1" checked="checked">是
-                                            </label>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="radio2" value="option2" >否
-                                            </label>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-lg-2 col-md-2 col-sm-12 control-label">是否支持内部转岗</label>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="radio3" value="option1">是
-                                            </label>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="radio3" value="option2" checked="checked">否
-                                            </label>
-                                        </div>
 
-                                        <div class="form-group">
-                                            <div class="col-lg-offset-2">
-                                                <button class="btn btn-primary ml15" type="submit">提交申请</button>
-                                                <button class="btn btn-primary btn-alt ml25" type="submit">另存模板</button>
-                                                <button class="btn btn-default ml25" type="submit">暂存草稿</button>
+                                        <tr>
+                                            <td>
+                                                <label class="checkbox">
+                                                    <input class="check" type="checkbox" value="option2">
+                                                </label>
+                                            </td>
+                                            <td>PA20180510095</td>
+                                            <td>科创中心</td>
+                                            <td>前端工程师</td>
+                                            <td class="text-center">张鹏</td>
+                                            <td class="text-center">2018-5-10</td>
+                                            <td class="text-center">否</td>
+                                            <td class="text-center">是</td>
+                                            <td class="text-center">未通过</td>
+                                            <td class="text-center">是</td>
+                                            <td class="text-center">否</td>
+                                            <td class="text-center">
+                                                <a href="" class="mr5">查看</a>
+                                                <a href="" class="mr5 color-green">启用</a>
+                                                <a href="" class="mr5">停止</a>
+                                                <a href="" class="mr5 color-red">删除</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label class="checkbox">
+                                                    <input class="check" type="checkbox" value="option2">
+                                                </label>
+                                            </td>
+                                            <td>PA20180510095</td>
+                                            <td>科创中心</td>
+                                            <td>前端工程师</td>
+                                            <td class="text-center">张鹏</td>
+                                            <td class="text-center">2018-5-10</td>
+                                            <td class="text-center">否</td>
+                                            <td class="text-center">是</td>
+                                            <td class="text-center">待审核</td>
+                                            <td class="text-center">否</td>
+                                            <td class="text-center">是</td>
+                                            <td class="text-center">
+                                                <a href="" class="mr5">查看</a>
+                                                <a href="" class="mr5 color-green">启用</a>
+                                                <a href="" class="mr5">停止</a>
+                                                <a href="" class="mr5 color-red">删除</a>
+                                            </td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div  class="mt25 mb20">
+                                                共计100条  增补20条  增编30条
                                             </div>
                                         </div>
-                                        <!-- End .form-group  -->
-                                    </form>
+                                        <div class="col-lg-6 col-md-6 text-right ">
+                                            <div class="dataTables_paginate paging_bs_full" id="datatable_paginate">
+                                                <ul class="pagination">
+                                                    <li class="disabled">
+                                                        <a tabindex="0" class="paginate_button first" id="datatable_first">First</a>
+                                                    </li>
+                                                    <li class="disabled">
+                                                        <a tabindex="0" class="paginate_button previous" id="datatable_previous">Previous</a>
+                                                    </li>
+                                                    <li><a tabindex="0">1</a></li>
+                                                    <li><a tabindex="0">2</a></li>
+                                                    <li><a tabindex="0">3</a></li>
+                                                    <li><a tabindex="0">4</a></li>
+                                                    <li><a tabindex="0">5</a></li>
+                                                    <li><a tabindex="0" class="paginate_button next" id="datatable_next">Next</a></li>
+                                                    <li><a tabindex="0" class="paginate_button last" id="datatable_last">Last</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <!-- End .panel -->
                         </div>
-                        <!-- End col-lg-12 -->
+
+                        <!-- col-lg-6 end here -->
                     </div>
+
                     <!-- Page End here -->
                 </div>
                 <!-- End .outlet -->
@@ -462,8 +523,5 @@
         <script src="assets/plugins/misc/countTo/jquery.countTo.js"></script>
         <script src="assets/js/jquery.sprFlat.js"></script>
         <script src="assets/js/app.js"></script>
-
-
-
     </body>
 </html>
