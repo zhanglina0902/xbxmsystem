@@ -1,4 +1,3 @@
-
 body {
     overflow-x: hidden;
     min-height: 100%;
@@ -9,6 +8,8 @@ body {
     -webkit-transition: -webkit-transform 0.4s ease !important;
     transition: transform 0.4s ease !important;
     position: relative;
+    font-family: Helvetica Neue,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif,sans-serif,fantasy,cursive;
+
 }
 body.stop-scrolling {
     height: 100%;
@@ -46,27 +47,6 @@ body.login-page #login .login-wrapper {
     display: inline-block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
 }
-body.login-page #login .login-wrapper .nav-tabs.nav-justified li:first-child a {
-    border-top-left-radius: 4px;
-}
-body.login-page #login .login-wrapper .nav-tabs.nav-justified li:last-child a {
-    border-top-right-radius: 4px;
-}
-body.login-page #login .login-wrapper .nav-tabs.nav-justified li a {
-    border: none;
-}
-body.login-page #login .login-wrapper #user-info {
-    position: relative;
-    height: 156px;
-}
-body.login-page #login .login-wrapper #user-info img.cover {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-}
-body.login-page #login .login-wrapper #user-info h4.headline {
-    float: left;
-    padding: 10px 30px;
-}
 body.error-page {
     margin-top: 5%;
     background-color: #f3f5f6;
@@ -74,7 +54,6 @@ body.error-page {
 body.error-page h1.error-number {
     text-align: center;
     font-size: 20em;
-    font-family: Helvetica Neue,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
 }
 
 * {
@@ -119,24 +98,7 @@ h6 small,
    Template helpers
 ----------------------------------------- */
 /* ------------------ Sizes --------------------*/
-.s12 {
-    font-size: 12px !important;
-}
-.s16 {
-    font-size: 16px !important;
-}
-.s20 {
-    font-size: 20px !important;
-}
-.s24 {
-    font-size: 24px !important;
-}
-.s32 {
-    font-size: 32px !important;
-}
-.s64 {
-    font-size: 64px !important;
-}
+
 .vat {
     vertical-align: top !important;
 }
@@ -665,72 +627,58 @@ a.text-lime:hover {
 .white-bg {
     color: #768399;
     background: #ffffff;
-    background-color: #ffffff;
 }
 .red-bg {
     color: #ffffff;
     background: #f68484;
-    background-color: #f68484;
 }
 .blue-bg {
     color: #ffffff;
     background: #fc3f2b;
-    background-color: #fc3f2b;
 }
 .green-bg {
     color: #ffffff;
     background: #71d398;
-    background-color: #71d398;
 }
 .yellow-bg {
     color: #ffffff;
     background: #ffcc66;
-    background-color: #ffcc66;
 }
 .orange-bg {
     color: #ffffff;
     background: #f4b162;
-    background-color: #f4b162;
 }
 .purple-bg {
     color: #ffffff;
     background: #af91e1;
-    background-color: #af91e1;
 }
 .pink-bg {
     color: #ffffff;
     background: #f78db8;
-    background-color: #f78db8;
 }
 .lime-bg {
     color: #ffffff;
     background: #a8db43;
-    background-color: #a8db43;
 }
 .magenta-bg {
     color: #ffffff;
     background: #e65097;
-    background-color: #e65097;
 }
 .teal-bg {
     color: #ffffff;
     background: #97d3c5;
-    background-color: #97d3c5;
 }
 .brown-bg {
     color: #ffffff;
     background: #d1b993;
-    background-color: #d1b993;
 }
 .gray-bg {
     color: #768399;
     background: #e4e9eb;
-    background-color: #e4e9eb;
 }
 .dark-bg {
     color: #ffffff;
     background: #79859b;
-    background-color: #79859b;
 }
 .text-left {
     text-align: left !important;
@@ -1103,86 +1051,7 @@ a.text-lime:hover {
     filter: alpha(opacity=90);
     border-color: #79859b;
 }
-/* ------------------ Easypie charts --------------------*/
-.easyPieChart {
-    position: relative;
-    text-align: center;
-}
-.easyPieChart canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.pie-charts {
-    float: left;
-    text-align: center;
-    padding: 0 12px;
-    margin-bottom: 20px;
-}
-.pie-charts .easyPieChart {
-    font-weight: bold;
-}
-.pie-charts div.label {
-    color: #768399;
-    font-size: 100%;
-    width: 100%;
-    float: left;
-    margin-top: 10px;
-}
-.pie-charts.red-pie .easyPieChart {
-    color: #f68484;
-}
-.pie-charts.red-pie div.label {
-    color: #f68484;
-}
-.pie-charts.green-pie .easyPieChart {
-    color: #71d398;
-}
-.pie-charts.green-pie div.label {
-    color: #71d398;
-}
-.pie-charts.blue-pie .easyPieChart {
-    color: #fc3f2b;
-}
-.pie-charts.blue-pie div.label {
-    color: #fc3f2b;
-}
-.pie-charts.teal-pie .easyPieChart {
-    color: #97d3c5;
-}
-.pie-charts.teal-pie div.label {
-    color: #97d3c5;
-}
-.pie-charts.purple-pie .easyPieChart {
-    color: #af91e1;
-}
-.pie-charts.purple-pie div.label {
-    color: #af91e1;
-}
-/* ------------------ Flot charts --------------------*/
-#flotTip {
-    padding: 5px 10px;
-    color: white;
-    border-radius: 0px;
-    background: #606c81;
-    font-family: verdana;
-    font-size: 12px;
-    font-weight: bold;
-    white-space: nowrap;
-    display: inline-block;
-    z-index: 100;
-    opacity: 0.9;
-    filter: alpha(opacity=90);
-}
-.tickLabel {
-    font-family: "Open Sans";
-    font-size: 11px;
-    text-align: center;
-    font-weight: bold;
-}
-.blue-bg .tickLabel {
-    color: #ffffff;
-}
+
 /* ------------------ Icons in header tags --------------------*/
 h1 i,
 h2 i,
