@@ -2,23 +2,19 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Dashboard</title>
+        <title>首页</title>
         <!-- Mobile specific metas -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <!-- Force IE9 to render in normal mode -->
-        <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
-        <meta name="author" content="SuggeElson" />
+        <!--[if IE]>
+        <meta http-equiv="x-ua-compatible" content="IE=9" />
+        <![endif]-->
         <meta name="description" content=""/>
         <meta name="keywords" content=""/>
-        <meta name="application-name" content="sprFlat admin template" />
-        <!-- Import google fonts - Heading first/ text second -->
-        <link rel='stylesheet' type='text/css' >
-        <!--[if lt IE 9]>
-
-        <![endif]-->
-        <!-- Css files -->
         <!-- Icons -->
         <link href="assets/css/icons.css" rel="stylesheet" />
+        <!-- Fav and touch icons -->
+        <link rel="icon" href="assets/img/ico/favicon.ico" type="image/png">
         <!-- jQueryUI -->
         <link href="assets/css/sprflat-theme/jquery.ui.all.css" rel="stylesheet" />
         <!-- Bootstrap stylesheets (included template modifications) -->
@@ -27,8 +23,6 @@
         <link href="assets/css/plugins.css" rel="stylesheet" />
         <!-- Main stylesheets (template main css file) -->
         <link href="assets/css/main.css" rel="stylesheet" />
-        <!-- Fav and touch icons -->
-        <link rel="icon" href="assets/img/ico/favicon.ico" type="image/png">
     </head>
     <body>
         <!-- Start #header -->
@@ -37,37 +31,29 @@
                 <div class="navbar">
                     <!--logo-->
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="index.html">
-                            <i class="im-star3 text-logo-element animated bounceIn"></i>
-                            <span class="text-slogan">XBXM</span>
+                        <a class="navbar-logo" href="index.html">
+                            <img src="assets/img/xm-logo.svg">
                         </a>
                     </div>
                     <nav class="top-nav" role="navigation">
-                        <ul class="nav navbar-nav pull-left">
-                            <li id="toggle-sidebar-li">
-                                <a href="#" id="toggle-sidebar">
-                                    <i class="fa-align-justify"></i>
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="nav navbar-nav pull-right">
+                        <ul class="nav navbar-nav pull-right nav-right">
                             <li>
-                                <a href="#">帮助中心</a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" data-toggle="dropdown">
-                                    <img class="user-avatar" src="assets/img/avatars/48.jpg" alt="admin">admin
+                                <a href="#">
+                                    <img class="navicon" src="assets/img/notification.svg" alt="消息">
+                                    <span class="square-4 bg-danger"></span>
                                 </a>
-                                <ul class="dropdown-menu right" role="menu">
-                                    <li><a href="#"><i class="st-user"></i>我的账号</a>
-                                    </li>
-                                    <li><a href="#"><i class="st-cloud"></i>我的任务</a>
-                                    </li>
-                                    <li><a href="#"><i class="ec-mail"></i>我的消息</a>
-                                    </li>
-                                    <li><a href="#"><i class="im-exit"></i>退出</a>
-                                    </li>
-                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img class="navicon" src="assets/img/profile.svg" alt="admin">新博美第一个用户
+                                </a>
+                            </li>
+                            <li>
+                                <div class="btn-group btn-account">
+                                    <button class="btn btn-primary btn-sm">普通用户</button>
+                                    <button class="btn btn-default btn-sm">管理员</button>
+                                </div>
+
                             </li>
                         </ul>
                     </nav>
@@ -78,77 +64,25 @@
         <!-- End #header -->
 
         <!-- Start #sidebar -->
-        <div id="sidebar">
-            <!-- Start .sidebar-inner -->
+        <div id="sidebar" >
             <div class="sidebar-inner">
                 <!-- Start #sideNav -->
                 <ul id="sideNav" class="nav nav-pills nav-stacked">
-                    <li><a href="index.html">首页<i class="im-home"></i></a></li>
+                    <li><a href="index.html">首页</a></li>
                     <li>
-                        <a href="#">招聘管理<i class="fa-zoom-in"></i></a>
+                        <a href="#">招聘管理</a>
                         <ul class="nav sub">
-                            <li><a href="Apply.html"><i class="ec-pencil2"></i>用人申请</a></li>
-                            <li><a href="#"><i class="im-checkbox-checked"></i>发布招聘</a></li>
-                            <li><a href="#"><i class="im-wand"></i>应聘者管理</a></li>
-                            <li><a href="#"><i class="fa-user"></i>人才库</a></li>
+                            <li><a href="Apply.html">用人申请</a></li>
+                            <li><a href="#">发布招聘</a></li>
+                            <li><a href="#">应聘者管理</a></li>
+                            <li><a href="#">人才库</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#">工作台管理<i class="im-screen "></i></a>
-                    </li>
-                    <li>
-                        <a href="#">培训管理 <i class="fa-windows"></i></a>
-                    </li>
-                    <li>
-                        <a href="#">假勤管理 <i class="fa-calendar-empty"></i></a>
-                    </li>
-                    <li>
-                        <a href="#">绩效管理 <i class="fa-money"></i></a>
-                    </li>
-                    <li>
-                        <a href="#">薪资管理 <i class="fa-dollar"></i></a>
-                    </li>
-                    <li><a href="#">员工管理 <i class="st-lab"></i></a>
-                        <ul class="nav sub">
-                            <li><a href="#"><i class="fa-bell"></i>通讯录管理</a>
-                            </li>
-                            <li><a href="#"><i class="br-window"></i>异动管理</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#">组织架构管理 <i class="fa-sitemap"></i></a>
-                        <ul class="nav sub">
-                            <li>
-                                <a href="#"><i class="fa-bell"></i>组织架构</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="br-window"></i>职务职级</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="br-window"></i>职位</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">档案管理 <i class="fa-file-alt"></i></a>
-                    </li>
-                    <li>
-                        <a href="#">物料管理 <i class="fa-archive"></i></a>
-                    </li>
-                    <li>
-                        <a href="#">辅助管理 <i class="fa-legal"></i></a>
-                    </li>
-                    <li>
-                        <a href="#">统计管理 <i class="fa-bar-chart"></i></a>
-                    </li>
-                    <li>
-                        <a href="#">新建文档生成模块 <i class="fa-folder-open"></i></a>
-                    </li>
+
+
                 </ul>
                 <!-- End #sideNav -->
-
             </div>
-            <!-- End .sidebar-inner -->
         </div>
         <!-- End #sidebar -->
 
@@ -156,31 +90,37 @@
         <div id="content">
             <!-- Start .content-wrapper -->
             <div class="content-wrapper">
-                <div class="row">
-                    <!-- Start .row -->
 
-                </div>
                 <!-- End .row -->
                 <div class="outlet">
                     <!-- Start .outlet -->
                     <!-- Page start here ( usual with .row ) -->
-                    <!-- End .row -->
+
+                    <div class="row" style="height: 1000px">
+
+                    </div>
                     <!-- Page End here -->
+
                 </div>
                 <!-- End .outlet -->
+                <!--start footer-->
+                <footer class="footer">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            版权信息 ©2018 新博新美  <a href="">意见反馈</a>
+                        </div>
+                    </div>
+                </footer>
+                <!--end footer-->
             </div>
             <!-- End .content-wrapper -->
             <div class="clearfix"></div>
         </div>
         <!-- End #content -->
-        <!-- Javascripts -->
-        <!-- Load pace first -->
-        <script src="assets/plugins/core/pace/pace.min.js"></script>
+       
         <!-- Important javascript libs(put in all pages) -->
         <script src="assets/js/jquery-1.8.3.min.js"></script>
-
         <script src="assets/js/jquery-ui.js"></script>
-
         <![endif]-->
         <!-- Bootstrap plugins -->
         <script src="assets/js/bootstrap/bootstrap.js"></script>
@@ -189,8 +129,7 @@
         <!-- Custom scroll for sidebars,tables and etc. -->
         <script src="assets/plugins/core/slimscroll/jquery.slimscroll.min.js"></script>
         <script src="assets/plugins/core/slimscroll/jquery.slimscroll.horizontal.min.js"></script>
-        <!-- Proivde quick search for many widgets -->
-        <script src="assets/plugins/core/quicksearch/jquery.quicksearch.js"></script>
+
         <!-- Other plugins ( load only nessesary plugins for every page) -->
         <script src="assets/plugins/forms/icheck/jquery.icheck.js"></script>
         <script src="assets/plugins/misc/highlight/highlight.pack.js"></script>

@@ -8,16 +8,11 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
     document.createTextNode(
       '@-ms-viewport{width:auto!important}'
     )
-  )
+  );
   document.querySelector('head').appendChild(msViewportStyle)
-}
+};
 
-//Android stock browser
-var nua = navigator.userAgent;
-var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1)
-if (isAndroid) {
-  $('select.form-control').removeClass('form-control').css('width', '100%')
-}
+
 
 //doc ready function
 $(document).ready(function() {
@@ -109,7 +104,7 @@ $(document).ready(function() {
         backToTop: {
             active: true, //activate back to top
             scrolltime: 800, //scroll time speed
-            imgsrc: 'assets/img/backtop.png', //image 
+            imgsrc: 'assets/img/backtop.png', //image
             width: 48, //width of image
             place: 'bottom-right', //position top-left, top-right, bottom-right, bottom-left
             fadein: 500, //fadein speed
@@ -138,6 +133,5 @@ $(document).ready(function() {
     $("[data-toggle=popover]").popover ();
 
     //------------- Qick post wysiwyg editor and tags -------------//
-
 
 });

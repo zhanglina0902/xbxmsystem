@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>profile</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="用人申请列表页" transform="translate(-1625.000000, -33.000000)" stroke="#F45138" stroke-width="2.33333333">
+            <g id="Group-8" transform="translate(1584.000000, 33.000000)">
+                <g id="profile" transform="translate(41.000000, 0.000000)">
+                    <path d="M5.88741733,20.5350877 C7.70778353,22.0096226 10.0086571,22.8333333 12.5,22.8333333 C14.9324975,22.8333333 17.2429207,21.9964774 19.077645,20.5350877 L5.88741733,20.5350877 Z" id="Oval-19"></path>
+                    <path d="M5.88741733,15.9035088 C7.70778353,17.3780437 10.0086571,18.2017544 12.5,18.2017544 C14.9324975,18.2017544 17.2429207,17.3648985 19.077645,15.9035088 L5.88741733,15.9035088 Z" id="Oval-19-Copy" transform="translate(12.500000, 17.052632) scale(1, -1) translate(-12.500000, -17.052632) "></path>
+                    <path d="M12.5,14.7368421 C14.4329966,14.7368421 16,13.1816207 16,11.2631579 C16,9.34469508 14.4329966,7.78947368 12.5,7.78947368 C10.5670034,7.78947368 9,9.34469508 9,11.2631579 C9,13.1816207 10.5670034,14.7368421 12.5,14.7368421 Z" id="Oval-47"></path>
+                    <path d="M23,12.4210526 C23,11.7320555 22.9326284,11.0586756 22.8040668,10.4070479 C21.8587168,5.6154442 17.6047731,2 12.5,2 C7.41041378,2 3.16660205,5.59396404 2.20445832,10.3643136 C2.07035149,11.029221 2,11.7169828 2,12.4210526" id="Oval-7" opacity="0.379999995" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
