@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>首页</title>
+        <title>用人申请列表</title>
         <!-- Mobile specific metas -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <!-- Force IE9 to render in normal mode -->
@@ -71,7 +71,7 @@
                     <li>
                         <a href="#" class="expand">招聘管理</a>
                         <ul class="nav sub" style="display: block">
-                            <li><a href="apply-list.html" >用人申请</a></li>
+                            <li><a href="apply-list.html" class="active">用人申请</a></li>
                             <li><a href="#">发布招聘</a></li>
                             <li><a href="#">应聘者管理</a></li>
                             <li><a href="#">人才库</a></li>
@@ -90,66 +90,45 @@
         <div id="content">
             <!-- Start .content-wrapper -->
             <div class="content-wrapper">
+                <div class="row heading">
+                    <div class="col-lg-12">
+                        <ul  class="breadcrumb p43">
+                            <li><a href="">招聘管理</a><i class="en-arrow-right7"></i></li>
+                            <li><a href="">用人申请</a><i class="en-arrow-right7"></i></li>
+                            <li>用人申请列表</li>
+                        </ul>
+
+                    </div>
+
+                </div>
 
                 <!-- End .row -->
                 <div class="outlet">
                     <!-- Start .outlet -->
                     <!-- Page start here ( usual with .row ) -->
-                    <div class="row" >
+                    <div class="row">
                         <div class="col-lg-12">
-                            <div class="indextop-notice p43 pb20  mt25">
-                                <span class="mr20">累计使用天数：112天</span><span class="ml25">上次登录时间：2018-09-09 12</span>
-                            </div>
                             <div class="xm-contbox">
-                                <div class="xm-title red-bg p43">通知（通知待办项）</div>
-                                <div class="xm-contbody p43">
-                                    <h3>1.通知标题</h3>
-                                    <h3>2.待办事项名称</h3>
-                                </div>
-                            </div>
-                            <div class="xm-contbox">
-                                <div class="xm-title red-bg p43">日常工作</div>
-                                <div class="xm-contbody p43">
-                                    <ul class="worklist clearfix">
-                                        <li>
-                                            <a href="">
-                                                <img src="assets/img/index-assignment.svg">
-                                                <p>招聘任务</p>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                <img src="assets/img/index-assignment.svg">
-                                                <p>面试任务</p>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                <img src="assets/img/index-assignment.svg">
-                                                <p>审批任务</p>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="">
-                                                <img src="assets/img/index-assignment.svg">
-                                                <p>用人申请</p>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="xm-contbox">
-                                <div class="xm-title red-bg p43">数据统计</div>
-                                <div class="xm-contbody p43">
-                                    <h3>1.通知标题</h3>
-                                    <h3>2.待办事项名称</h3>
-                                </div>
-                            </div>
-                        </div>
+                                <div class="xm-title red-bg p43">任务列表</div>
+                                <div class="xm-contbody">
+                                    <div class="btn-group listmenu">
+                                        <button type="button" class="btn btn-primary ">全部</button>
+                                        <button type="button" class="btn btn-primary btn-alt">已通过</button>
+                                        <button type="button" class="btn btn-primary btn-alt">待审批</button>
+                                        <button type="button" class="btn btn-primary btn-alt">审核中</button>
+                                        <button type="button" class="btn btn-primary btn-alt">未通过</button>
+                                        <button type="button" class="btn btn-primary btn-alt">已延期</button>
 
+                                    </div>
+                                    <h3>1.通知标题</h3>
+                                    <h3>2.待办事项名称</h3>
+                                </div>
+                            </div>
+
+
+                        </div>
                     </div>
                     <!-- Page End here -->
-
                 </div>
                 <!-- End .outlet -->
                 <!--start footer-->

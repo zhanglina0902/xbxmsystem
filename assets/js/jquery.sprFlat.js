@@ -221,13 +221,7 @@
             $('.modal').on('show.bs.modal', function (e) {
                 //center modal
                 plugin.centerModal();
-            })
-
-            //update breadcrumbs
-            if (plugin.settings.breadcrumbs.auto) {
-                this.breadCrumbs();
-            }       
-
+            });
             //dropdown menu animations
             if(plugin.settings.dropdownMenu.animation) {
                this.dropdownMenuAnimations();
@@ -1056,40 +1050,11 @@
                 });
                 if($(this).hasClass('in') == false){
                   $(this).hide();
-                };
+                }
             });
-        }
+        };
 
-        //Update breadcrumbs
-        plugin.breadCrumbs = function () {
-            var breadcrumb = $('#crumb');
-            var rightArrow = '<i class="en-arrow-right7"></i>';
-            var homeIcon = '<i class="im-home"></i>';
-            var navel = $('#sideNav>li a.active');
-            var navsub = navel.closest('.nav.sub');
-            //empty curmb
-            breadcrumb.empty();
-            breadcrumb.append('<li>'+homeIcon+'<a href="index.html">首页</a>'+rightArrow+'</li>');
-            if (navsub.closest('li').hasClass('hasSub')) {
-                //get previous
-                navel1 = navsub.prev('a.expand');
-                link = navel1.attr('href');
-                icon1 = navel1.children('i').not('.sideNav-arrow').prop('outerHTML');
-                text1 = navel1.children('.notification').remove().end().text().trim();
 
-                breadcrumb.append('<li>'+icon1+'<a href="'+link+'">'+text1+'</a>'+rightArrow+'</li>');
-
-                icon = navel.children('i').prop('outerHTML');
-                text = navel.children('.indicator').remove().end().text();
-                breadcrumb.append('<li>'+ icon +' '+ text +'</li>');
-
-            } else {
-                icon = navel.children('i').prop('outerHTML');
-                text = navel.children('.indicator').remove().end().text();
-                breadcrumb.append('<li>'+ icon +' '+ text +'</li>');
-            }         
-
-        }
 
         plugin.launchFullScreen = function (el) {           
             if ((document.fullScreenElement && document.fullScreenElement !== null) || (!document.mozFullScreen && !document.webkitIsFullScreen)) { 
