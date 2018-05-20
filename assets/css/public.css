@@ -2,7 +2,7 @@ body {
     overflow-x: hidden;
     min-height: 100%;
     background: #ffffff;
-    color: #768399;
+    color: #000000;
     -webkit-font-smoothing: antialiased;
     font-weight: 400;
     -webkit-transition: -webkit-transform 0.4s ease !important;
@@ -24,29 +24,6 @@ body.remove-scroll {
     height: 100%;
     overflow: hidden;
 }
-body.login-page {
-    background: #fc3f2b;
-}
-body.login-page #login {
-    margin: 10% auto 0 auto;
-    position: relative;
-    width: 420px;
-}
-body.login-page #login #logo {
-    position: absolute;
-    top: -75px;
-    left: 50%;
-    margin-left: -105px;
-    /* width of the logo devided by 2 */
-}
-body.login-page #login .login-wrapper {
-    width: 100%;
-    height: auto;
-    background-color: #ffffff;
-    border-radius: 4px;
-    display: inline-block;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
-}
 body.error-page {
     margin-top: 5%;
     background-color: #f3f5f6;
@@ -61,42 +38,7 @@ body.error-page h1.error-number {
     box-sizing: border-box;
     outline: none !important;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-    font-family: inherit;
-    font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: 0;
-}
-h1 small,
-h2 small,
-h3 small,
-h4 small,
-h5 small,
-h6 small,
-.h1 small,
-.h2 small,
-.h3 small,
-.h4 small,
-.h5 small,
-.h6 small {
-    font-weight: normal;
-    line-height: 1;
-    color: #999999;
-}
-/* -----------------------------------------
-   Template helpers
------------------------------------------ */
+
 /* ------------------ Sizes --------------------*/
 
 .vat {
@@ -423,21 +365,7 @@ h6 small,
 .color-dark {
     color: #79859b !important;
 }
-.color-pink {
-    color: #f78db8 !important;
-}
-.color-lime {
-    color: #a8db43 !important;
-}
-.color-magenta {
-    color: #e65097 !important;
-}
-.color-purple {
-    color: #af91e1 !important;
-}
-.color-brown {
-    color: #d1b993 !important;
-}
+
 .color-gray {
     color: #555555 !important;
 }
@@ -450,8 +378,8 @@ h6 small,
     background-color: #ffffff;
 }
 .red-bg {
-    color: #ffffff;
-    background-color: #f68484;
+    color:rgba(244,81,56,1);
+    background:rgba(244,81,56,0.1094);
 }
 .blue-bg {
     color: #ffffff;
@@ -469,30 +397,7 @@ h6 small,
     color: #ffffff;
     background-color: #f4b162;
 }
-.purple-bg {
-    color: #ffffff;
-    background-color: #af91e1;
-}
-.pink-bg {
-    color: #ffffff;
-    background-color: #f78db8;
-}
-.lime-bg {
-    color: #ffffff;
-    background-color: #a8db43;
-}
-.magenta-bg {
-    color: #ffffff;
-    background-color: #e65097;
-}
-.teal-bg {
-    color: #ffffff;
-    background-color: #97d3c5;
-}
-.brown-bg {
-    color: #ffffff;
-    background-color: #d1b993;
-}
+
 .gray-bg {
     color: #768399;
     background-color: #e4e9eb;
@@ -570,30 +475,7 @@ a.text-orange:hover {
 a.text-dark:hover {
     color: #606c81;
 }
-.text-brown {
-    color: #d1b993;
-}
-a.text-brown:hover {
-    color: #c2a26f;
-}
-.text-pink {
-    color: #f78db8;
-}
-a.text-pink:hover {
-    color: #f45d9a;
-}
-.text-magenta {
-    color: #e65097;
-}
-a.text-magenta:hover {
-    color: #e0237c;
-}
-.text-lime {
-    color: #a8db43;
-}
-a.text-lime:hover {
-    color: #90c526;
-}
+
 /* ------------------ Positions --------------------*/
 .relative {
     position: relative;
@@ -623,77 +505,6 @@ a.text-lime:hover {
 /* -----------------------------------------
    Template elements
 ----------------------------------------- */
-/* ------------------ Backgrounds --------------------*/
-.white-bg {
-    color: #768399;
-    background: #ffffff;
-}
-.red-bg {
-    color: #ffffff;
-    background: #f68484;
-}
-.blue-bg {
-    color: #ffffff;
-    background: #fc3f2b;
-}
-.green-bg {
-    color: #ffffff;
-    background: #71d398;
-}
-.yellow-bg {
-    color: #ffffff;
-    background: #ffcc66;
-}
-.orange-bg {
-    color: #ffffff;
-    background: #f4b162;
-}
-.purple-bg {
-    color: #ffffff;
-    background: #af91e1;
-}
-.pink-bg {
-    color: #ffffff;
-    background: #f78db8;
-}
-.lime-bg {
-    color: #ffffff;
-    background: #a8db43;
-}
-.magenta-bg {
-    color: #ffffff;
-    background: #e65097;
-}
-.teal-bg {
-    color: #ffffff;
-    background: #97d3c5;
-}
-.brown-bg {
-    color: #ffffff;
-    background: #d1b993;
-}
-.gray-bg {
-    color: #768399;
-    background: #e4e9eb;
-}
-.dark-bg {
-    color: #ffffff;
-    background: #79859b;
-}
-.text-left {
-    text-align: left !important;
-}
-.page-header {
-    border-bottom-color: #e7e7e2;
-    margin-top: 20px;
-    padding-bottom: 0;
-    box-shadow: 0 1px 0px #ffffff;
-}
-.page-header i {
-    color: #acb1b8;
-    margin-right: 10px;
-    float: left;
-}
 /* ------------------ Tiles --------------------*/
 .tile {
     display: block;
