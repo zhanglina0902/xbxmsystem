@@ -3021,7 +3021,7 @@ body {
   background: #f3f5f6;
 }
 .sp-dd {
-  color: #75b9e6;
+  color: #F45138;
 }
 /* -----------------------------------------
    Daterange picker
@@ -3116,8 +3116,8 @@ body {
 }
 .daterangepicker .ranges li.acitve,
 .daterangepicker .ranges li:hover {
-  background: #75b9e6;
-  border: 1px solid #75b9e6;
+  background: #F45138;
+  border: 1px solid #F45138;
   color: #ffffff;
 }
 .daterangepicker .calendar {
@@ -3158,7 +3158,7 @@ body {
   border-bottom: 1px solid #e7e7e2;
 }
 .daterangepicker table thead tr:last-child {
-  color: #75b9e6;
+  color: #F45138;
   font-weight: normal;
 }
 .daterangepicker td,
@@ -3199,8 +3199,8 @@ body {
 .daterangepicker th.active,
 .daterangepicker td.active:hover,
 .daterangepicker th.active:hover {
-  background-color: #75b9e6;
-  border-color: #75b9e6;
+  background-color: #F45138;
+  border-color: #F45138;
   color: #ffffff;
 }
 .daterangepicker td.active.start-date,
@@ -3285,7 +3285,7 @@ body {
   border-bottom: 1px solid #e7e7e2;
 }
 .datetimepicker table thead tr:last-child {
-  color: #75b9e6;
+  color: #F45138;
 }
 .datetimepicker table tr td.minute:hover {
   background: #eeeeee;
@@ -3426,7 +3426,7 @@ body {
 .datetimepicker table tr td.today:hover,
 .datetimepicker table tr td.today.disabled,
 .datetimepicker table tr td.today.disabled:hover {
-  background-color: #75b9e6;
+  background-color: #F45138;
 }
 .datetimepicker table tr td.today:hover,
 .datetimepicker table tr td.today:hover:hover,
@@ -3448,7 +3448,7 @@ body {
 .datetimepicker table tr td.today:hover[disabled],
 .datetimepicker table tr td.today.disabled[disabled],
 .datetimepicker table tr td.today.disabled:hover[disabled] {
-  background-color: #75b9e6;
+  background-color: #F45138;
 }
 .datetimepicker table tr td.today:active,
 .datetimepicker table tr td.today:hover:active,
@@ -3458,13 +3458,13 @@ body {
 .datetimepicker table tr td.today:hover.active,
 .datetimepicker table tr td.today.disabled.active,
 .datetimepicker table tr td.today.disabled:hover.active {
-  background-color: #75b9e6;
+  background-color: #F45138;
 }
 .datetimepicker table tr td.active,
 .datetimepicker table tr td.active:hover,
 .datetimepicker table tr td.active.disabled,
 .datetimepicker table tr td.active.disabled:hover {
-  background-color: #75b9e6;
+  background-color: #F45138;
   color: #fff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
@@ -3488,7 +3488,7 @@ body {
 .datetimepicker table tr td.active:hover[disabled],
 .datetimepicker table tr td.active.disabled[disabled],
 .datetimepicker table tr td.active.disabled:hover[disabled] {
-  background-color: #75b9e6;
+  background-color: #F45138;
   color: #fff;
 }
 .datetimepicker table tr td.active:active,
@@ -3499,7 +3499,7 @@ body {
 .datetimepicker table tr td.active:hover.active,
 .datetimepicker table tr td.active.disabled.active,
 .datetimepicker table tr td.active.disabled:hover.active {
-  background-color: #75b9e6;
+  background-color: #F45138;
   color: #fff;
 }
 .datetimepicker .datetimepicker-hours table tr td span.hour_am,
@@ -3521,7 +3521,7 @@ body {
 .datetimepicker table tr td span.active:hover,
 .datetimepicker table tr td span.active.disabled,
 .datetimepicker table tr td span.active.disabled:hover {
-  background-color: #75b9e6;
+  background-color: #F45138;
   color: #fff;
 }
 .datetimepicker table tr td span.active:hover,
@@ -3544,7 +3544,7 @@ body {
 .datetimepicker table tr td span.active:hover[disabled],
 .datetimepicker table tr td span.active.disabled[disabled],
 .datetimepicker table tr td span.active.disabled:hover[disabled] {
-  background-color: #75b9e6;
+  background-color: #F45138;
   color: #fff;
 }
 .datetimepicker table tr td span.active:active,
@@ -3555,7 +3555,7 @@ body {
 .datetimepicker table tr td span.active:hover.active,
 .datetimepicker table tr td span.active.disabled.active,
 .datetimepicker table tr td span.active.disabled:hover.active {
-  background-color: #75b9e6;
+  background-color: #F45138;
   color: #fff;
 }
 .datetimepicker thead tr:first-child th,
@@ -3987,7 +3987,7 @@ div.tagsinput div {
   user-select: none;
 }
 .select2-results .select2-highlighted {
-  background: #75b9e6;
+  background: #F45138;
   color: #fff;
 }
 .select2-results li em {
@@ -5314,7 +5314,7 @@ div.DTFC_LeftFootWrapper table {
 }
 .slider-selection {
   position: absolute;
-  background: #75b9e6;
+  background: #F45138;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 0;
@@ -5663,8 +5663,8 @@ fieldset[disabled] .fc-button.active {
   z-index: 9;
 }
 .fc-event {
-  border: 1px solid #75b9e6;
-  background-color: #75b9e6;
+  border: 1px solid #F45138;
+  background-color: #F45138;
   color: #fff;
   font-size: .85em;
   cursor: default;
@@ -5953,7 +5953,7 @@ table.fc-border-separate {
   /* try to mimick the look of a real event */
   margin: 10px 0;
   padding: 5px;
-  background: #75b9e6;
+  background: #F45138;
   color: #fff;
   font-size: 1em;
   cursor: pointer;
@@ -7576,7 +7576,7 @@ img.mfp-img {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  border: 3px solid #75b9e6;
+  border: 3px solid #F45138;
   margin-right: 10px;
   margin-top: 2px;
   float: left;
@@ -7619,7 +7619,7 @@ img.mfp-img {
   background-color: #eeeeee;
 }
 #email-sidebar #email-nav li a:hover i {
-  color: #75b9e6;
+  color: #F45138;
 }
 #email-sidebar #email-nav li.nav-header {
   display: block;
@@ -7682,7 +7682,7 @@ img.mfp-img {
   padding: 7px 7px;
   background-color: transparent;
   background-image: none;
-  border: 1px solid #75b9e6;
+  border: 1px solid #F45138;
   border-radius: 4px;
   float: left;
   margin-right: 10px;
@@ -7692,7 +7692,7 @@ img.mfp-img {
   width: 22px;
   height: 2px;
   border-radius: 1px;
-  background-color: #75b9e6;
+  background-color: #F45138;
   margin-bottom: 2px;
   margin-top: 2px;
 }
@@ -7792,7 +7792,7 @@ img.mfp-img {
   text-transform: uppercase;
 }
 .gallery .gallery-toolbar .btn.active {
-  background-color: #75b9e6;
+  background-color: #F45138;
   color: #ffffff;
 }
 .gallery .gallery-inner .mix {

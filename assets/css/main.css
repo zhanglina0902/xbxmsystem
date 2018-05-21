@@ -13,6 +13,12 @@
   color:rgba(244,81,56,1);
   background:rgba(244,81,56,0.1094);
 }
+.w160{
+  width: 160px;
+}
+.w186{
+  width:186px;
+}
 .p43{
   padding-left: 43px;
   padding-right:43px;
@@ -57,6 +63,33 @@
   font-size:20px;
 }
 
+/*批量删除*/
+.xm-allbutton button{
+  font-size: 18px;
+  width: 135px;
+
+}
+/*右侧搜索*/
+.right-search input {
+  border: 1px solid #cccccc;
+  background: none;
+  height: 40px;
+  padding-left: 40px;
+  width: 100%;
+  border-radius: 3px;
+}
+.right-search button {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  border: none;
+  background: none;
+}
+.right-search button i {
+  color: #acb1b8;
+}
+
+/*table*/
 .table > thead > tr > th,
 .table > tbody > tr > th,
 .table > tfoot > tr > th,
@@ -68,9 +101,17 @@
   font-size: 18px;
   border:1px solid transparent;
 }
+
 .table.applylisttable > thead > tr > th{
   padding:20px 10px;
-  border:1px solid #cccccc;
+  border-top:1px solid #cccccc;
+  border-bottom:1px solid #cccccc;
+}
+.table.applylisttable > thead > tr > th:first-child{
+  border-left:1px solid #cccccc;
+}
+.table.applylisttable > thead > tr > th:last-child{
+  border-right:1px solid #cccccc;
 }
 .table.applylisttable > thead > tr:first-child > th{
   border-top:1px solid #cccccc;
@@ -82,6 +123,12 @@
 .table-striped > tbody > tr:nth-child(odd) > td,
 .table-striped > tbody > tr:nth-child(odd) > th {
   background:rgba(255,241,239,1);
+}
+.w170{
+  width:170px;
+}
+.w140{
+  width:140px;
 }
 .leaderlist label{
   font-weight: normal;
@@ -119,6 +166,16 @@
 .lead-list label{
   font-weight: normal;
 }
+.modal-footer .btn{
+  font-size: 18px;
+}
+
+.right-search{
+  position: relative;
+
+
+}
+
 
 
 

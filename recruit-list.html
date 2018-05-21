@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>用人申请列表</title>
+        <title>发布招聘列表</title>
         <!-- Mobile specific metas -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <!-- Force IE9 to render in normal mode -->
@@ -22,7 +22,6 @@
         <!-- Main stylesheets (template main css file) -->
         <link href="assets/css/public.css" rel="stylesheet" />
         <link href="assets/css/main.css" rel="stylesheet" />
-
     </head>
     <body>
         <!-- Start #header -->
@@ -71,7 +70,7 @@
                     <li>
                         <a href="#" class="expand">招聘管理</a>
                         <ul class="nav sub" style="display: block">
-                            <li><a href="apply-list.html" class="active">用人申请</a></li>
+                            <li><a href="apply-list.html" >用人申请</a></li>
                             <li><a href="recruit-list.html">发布招聘</a></li>
                             <li><a href="#">应聘者管理</a></li>
                             <li><a href="#">人才库</a></li>
@@ -90,8 +89,8 @@
                     <div class="col-lg-12">
                         <ul  class="breadcrumb p43">
                             <li><a href="">招聘管理</a><i class="en-arrow-right7"></i></li>
-                            <li><a href="">用人申请</a><i class="en-arrow-right7"></i></li>
-                            <li>用人申请列表</li>
+                            <li><a href="">发布招聘</a><i class="en-arrow-right7"></i></li>
+                            <li>发布招聘列表</li>
                         </ul>
                     </div>
                 </div>
@@ -102,18 +101,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="xm-contbox">
-                                <div class="xm-title red-bg p43">任务列表</div>
                                 <div class="xm-contbody">
-                                    <div class="btn-group listmenu">
-                                        <button type="button" class="btn btn-primary ">全部</button>
-                                        <button type="button" class="btn btn-primary btn-alt">已通过</button>
-                                        <button type="button" class="btn btn-primary btn-alt">待审批</button>
-                                        <button type="button" class="btn btn-primary btn-alt">审核中</button>
-                                        <button type="button" class="btn btn-primary btn-alt">未通过</button>
-                                        <button type="button" class="btn btn-primary btn-alt">已延期</button>
-                                    </div>
-
-
                                     <div class="row">
                                         <div class="col-lg-12 mb10 ">
                                             <div class="">
@@ -193,7 +181,6 @@
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="row">
                                         <div class="col-lg-12 clearfix">
                                             <div class="mb20 pull-left xm-allbutton">
@@ -229,10 +216,9 @@
                                                     <th class="text-center">申请时间</th>
                                                     <th class="text-center">增补</th>
                                                     <th class="text-center">增编</th>
-                                                    <th class="text-center">审批状态</th>
                                                     <th class="text-center">内推</th>
-                                                    <th class="text-center">内部转岗</th>
-                                                    <th class="text-center w170" >操作</th>
+                                                    <th class="text-center">审批状态</th>
+                                                    <th class="text-center w140">操作</th>
                                                 </tr>
                                                 </thead>
                                                 <tbody>
@@ -249,17 +235,13 @@
                                                     <td class="text-center">2018-5-10</td>
                                                     <td class="text-center">否</td>
                                                     <td class="text-center">是</td>
+                                                    <td class="text-center">是</td>
                                                     <td class="text-center">已通过</td>
-                                                    <td class="text-center">是</td>
-                                                    <td class="text-center">是</td>
-                                                    <td class="text-center w170">
+                                                    <td class="text-center w140">
                                                         <a href="" class="mr10">查看</a>
-                                                        <a href="" class="mr10">发布</a>
-                                                        <a href="" data-toggle="modal" data-target="#mySmallModal">移交</a>
                                                         <a href="" class="mr10" data-toggle="modal" data-target="#myModal4">启用</a>
-                                                        <a href="" class="mr10" data-toggle="modal" data-target="#myModal5">禁用</a>
-                                                        <a href="" data-toggle="modal" data-target="#myModal">删除</a>
-
+                                                        <a href="" class="mr10" data-toggle="modal" data-target="#myModal5">停止</a>
+                                                        <a href="" class="mr10" data-toggle="modal" data-target="#myModal">删除</a>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -275,17 +257,13 @@
                                                     <td class="text-center">2018-5-10</td>
                                                     <td class="text-center">否</td>
                                                     <td class="text-center">是</td>
-                                                    <td class="text-center">待审批</td>
-                                                    <td class="text-center">是</td>
                                                     <td class="text-center">否</td>
-                                                    <td class="text-center w170">
+                                                    <td class="text-center">已通过</td>
+                                                    <td class="text-center w140">
                                                         <a href="" class="mr10">查看</a>
-                                                        <a href="" class="mr10">撤销</a>
-                                                        <a href="" >移交</a>
                                                         <a href="" class="mr10">启用</a>
-                                                        <a href="" class="mr10">禁用</a>
-                                                        <a href="" >删除</a>
-
+                                                        <a href="" class="mr10">停止</a>
+                                                        <a href="" class="mr10">删除</a>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -301,15 +279,13 @@
                                                     <td class="text-center">2018-5-10</td>
                                                     <td class="text-center">否</td>
                                                     <td class="text-center">是</td>
-                                                    <td class="text-center">审批中</td>
                                                     <td class="text-center">否</td>
-                                                    <td class="text-center">是</td>
-                                                    <td class="text-left w170">
+                                                    <td class="text-center">已通过</td>
+                                                    <td class="text-center w140">
                                                         <a href="" class="mr10">查看</a>
-                                                        <a href="" class="mr10">审批</a>
-                                                        <a href="" >启用</a>
-                                                        <a href="" class="mr10">禁用</a>
-                                                        <a href="" >删除</a>
+                                                        <a href="" class="mr10">启用</a>
+                                                        <a href="" class="mr10">停止</a>
+                                                        <a href="" class="mr10">删除</a>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -325,64 +301,57 @@
                                                     <td class="text-center">2018-5-10</td>
                                                     <td class="text-center">否</td>
                                                     <td class="text-center">是</td>
-                                                    <td class="text-center">已延期</td>
-                                                    <td class="text-center">是</td>
-                                                    <td class="text-center">否</td>
-                                                    <td class="text-left w170">
-                                                        <a href="" class="mr10">查看</a>
-                                                        <a href="" class="mr10">修改</a>
-                                                        <a href="" class="mr10">启用</a>
-                                                        <a href="" class="mr10">禁用</a>
-                                                        <a href="" >删除</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td  class="text-center">
-                                                        <label class="checkbox">
-                                                            <input class="check" type="checkbox" value="option1">
-                                                        </label>
-                                                    </td>
-                                                    <td class="text-center">PA20180510095</td>
-                                                    <td class="text-center">科创中心</td>
-                                                    <td class="text-center">JAVA工程师</td>
-                                                    <td class="text-center">张鹏</td>
-                                                    <td class="text-center">2018-5-10</td>
-                                                    <td class="text-center">否</td>
-                                                    <td class="text-center">是</td>
-                                                    <td class="text-center">未通过</td>
-                                                    <td class="text-center">否</td>
-                                                    <td class="text-center">是</td>
-                                                    <td class="text-left w170">
-                                                        <a href="" class="mr10">查看</a>
-                                                        <a href="" class="mr10">修改</a>
-                                                        <a href="" class="mr10">启用</a>
-                                                        <a href="" class="mr10">停用</a>
-                                                        <a href="" >删除</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td  class="text-center">
-                                                        <label class="checkbox">
-                                                            <input class="check" type="checkbox" value="option1">
-                                                        </label>
-                                                    </td>
-                                                    <td class="text-center">PA20180510095</td>
-                                                    <td class="text-center">科创中心</td>
-                                                    <td class="text-center">JAVA工程师</td>
-                                                    <td class="text-center">张鹏</td>
-                                                    <td class="text-center">2018-5-10</td>
-                                                    <td class="text-center">否</td>
                                                     <td class="text-center">是</td>
                                                     <td class="text-center">已通过</td>
+                                                    <td class="text-center w140">
+                                                        <a href="" class="mr10">查看</a>
+                                                        <a href="" class="mr10">启用</a>
+                                                        <a href="" class="mr10">停止</a>
+                                                        <a href="" class="mr10">删除</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td  class="text-center">
+                                                        <label class="checkbox">
+                                                            <input class="check" type="checkbox" value="option1">
+                                                        </label>
+                                                    </td>
+                                                    <td class="text-center">PA20180510095</td>
+                                                    <td class="text-center">科创中心</td>
+                                                    <td class="text-center">JAVA工程师</td>
+                                                    <td class="text-center">张鹏</td>
+                                                    <td class="text-center">2018-5-10</td>
                                                     <td class="text-center">否</td>
                                                     <td class="text-center">是</td>
-                                                    <td class="text-left w170">
+                                                    <td class="text-center">是</td>
+                                                    <td class="text-center">已通过</td>
+                                                    <td class="text-center w140">
                                                         <a href="" class="mr10">查看</a>
-                                                        <a href="" class="mr10">发布</a>
-                                                        <a href="" class="mr10">移交</a>
                                                         <a href="" class="mr10">启用</a>
-                                                        <a href="" class="mr10">停用</a>
-                                                        <a href="" >删除</a>
+                                                        <a href="" class="mr10">停止</a>
+                                                        <a href="" class="mr10">删除</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td  class="text-center">
+                                                        <label class="checkbox">
+                                                            <input class="check" type="checkbox" value="option1">
+                                                        </label>
+                                                    </td>
+                                                    <td class="text-center">PA20180510095</td>
+                                                    <td class="text-center">科创中心</td>
+                                                    <td class="text-center">JAVA工程师</td>
+                                                    <td class="text-center">张鹏</td>
+                                                    <td class="text-center">2018-5-10</td>
+                                                    <td class="text-center">否</td>
+                                                    <td class="text-center">是</td>
+                                                    <td class="text-center">是</td>
+                                                    <td class="text-center">已通过</td>
+                                                    <td class="text-center w140">
+                                                        <a href="" class="mr10">查看</a>
+                                                        <a href="" class="mr10">启用</a>
+                                                        <a href="" class="mr10">禁用</a>
+                                                        <a href="" class="mr10">删除</a>
                                                     </td>
                                                 </tr>
                                                 </tbody>

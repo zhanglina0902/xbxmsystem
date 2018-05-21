@@ -29,6 +29,9 @@ a:hover{
 }
 
 /* ------------------ Sizes --------------------*/
+.f18{
+    font-size:18px;
+}
 
 .vat {
     vertical-align: top !important;
@@ -76,6 +79,9 @@ a:hover{
 }
 .mr25 {
     margin-right: 25px !important;
+}
+.mr50 {
+    margin-right: 50px !important;
 }
 .mb20 {
     margin-bottom: 20px !important;
