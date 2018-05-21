@@ -17,7 +17,19 @@
   width: 160px;
 }
 .w186{
-  width:186px;
+  width:186px;!important;
+}
+.w120{
+  width: 120px;
+}
+.w100{
+  width: 100px;
+}
+.w700{
+  width: 700px;!important;
+}
+.ml160{
+  margin-left: 160px;
 }
 .p43{
   padding-left: 43px;
@@ -64,7 +76,7 @@
 }
 
 /*批量删除*/
-.xm-allbutton button{
+.xm-allbutton a{
   font-size: 18px;
   width: 135px;
 
@@ -175,6 +187,13 @@
 
 
 }
+.form-horizontal.new-add .control-label{
+  text-align: left;
+  margin-left:43px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
 
 
 
