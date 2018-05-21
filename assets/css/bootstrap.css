@@ -1362,7 +1362,7 @@ th {
 .table > tfoot > tr > td {
   padding: 10px;
   line-height: 1.42857143;
-  vertical-align: top;
+  vertical-align: middle;
   border-top: 1px solid #f3f5f6;
 }
 .table > thead > tr > th {
@@ -1408,7 +1408,7 @@ th {
 }
 .table-striped > tbody > tr:nth-child(odd) > td,
 .table-striped > tbody > tr:nth-child(odd) > th {
-  background-color: #f9fafa;
+  background:rgba(255,241,239,1);
 }
 .table-hover > tbody > tr:hover > td,
 .table-hover > tbody > tr:hover > th {

@@ -57,7 +57,68 @@
   font-size:20px;
 }
 
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: 20px 10px;
+  vertical-align: middle;
+  font-size: 18px;
+  border:1px solid transparent;
+}
+.table.applylisttable > thead > tr > th{
+  padding:20px 10px;
+  border:1px solid #cccccc;
+}
+.table.applylisttable > thead > tr:first-child > th{
+  border-top:1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+.table-striped > tbody{
 
+}
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background:rgba(255,241,239,1);
+}
+.leaderlist label{
+  font-weight: normal;
+  font-size:18px;
+}
+
+.leaderlist-search {
+  position: relative;
+}
+.leaderlist-search input {
+  border: 1px solid #cccccc;
+  background: none;
+  height: 40px;
+  padding-right: 40px;
+  padding-left:10px;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.leaderlist-search button {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  border: none;
+  background: none;
+}
+.leaderlist-search button i {
+  color: #acb1b8;
+}
+.lead-list{
+  font-size:18px;
+  height: 300px;
+  overflow-y: scroll;
+}
+.lead-list label{
+  font-weight: normal;
+}
 
 
 
