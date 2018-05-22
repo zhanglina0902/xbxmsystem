@@ -31,6 +31,9 @@
 .ml160{
   margin-left: 160px;
 }
+.ml205{
+  margin-left: 205px;
+}
 .p43{
   padding-left: 43px;
   padding-right:43px;
@@ -52,8 +55,12 @@
   text-align: center;
   margin-right:225px;
 }
+
 .worklist li:nth-child(4n){
   margin-right:0;
+}
+.worklist li a{
+  display: block;
 }
 .worklist li a:hover{
   text-decoration: none;
@@ -63,6 +70,44 @@
   font-size:20px;
   color:rgba(0,0,0,1);
 }
+
+/*admin工作台*/
+.admin-worklist{
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+.admin-worklist li{
+  display: inline-block;
+  float: left;
+  margin-top: 57px;
+  text-align: center;
+  margin-right:58px;
+}
+.admin-worklist li a{
+  display: block;
+}
+.admin-worklist li a:hover{
+  text-decoration: none;
+}
+.admin-worklist li a p{
+  margin-top: 10px;
+  font-size:20px;
+  color:rgba(0,0,0,1);
+}
+.admin-worklist li:last-child{
+  border:1px solid #F45138;
+  width: 93px;
+  height: 93px;
+}
+.admin-worklist li:last-child a i{
+  display: inline-block;
+  font-size: 60px;
+  vertical-align: middle;
+  font-weight: lighter;
+}
+
+
 .listmenu{
   max-width: 852px;
   margin:48px auto;
@@ -193,9 +238,95 @@
   font-size: 18px;
   font-weight: normal;
 }
+@media (min-width: 768px) {
+  .form-inline .form-control.w112 {
+    width: 112px;
+  }
+  .form-inline .form-control.w460 {
+    width: 460px;
+  }
+
+}
+
+/*上传头像*/
+.upload-logo{
+  overflow: hidden;
+  color: #FFFFFF;
+  position: relative;
+}
+.upload-logo .btn{
+  width: 120px;
+  height: 120px;
+  line-height: 100px;
+  text-align: center;
+  background: transparent;
+  display: block;
+  font-size: 18px;
+  position: absolute;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  color: #333;
+}
+.upload{
+  position: relative;
+}
+.upload_pic{
+  display: block;
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  border-radius: 5px;
+}
+#cvs{
+  width: 120px;
+  height: 120px;
+  border:1px solid rgba(221,221,221,0.8);
+  box-shadow: 0 0px 13px rgba(221,221,221,0.8);
+
+}
+.tip-text{
+  color: #cccccc;
+  position: relative;
+  bottom: 50px;
+  font-size:18px;
+  margin-left: 10px;
+}
+
+
+/*add taglist*/
+.ml38{margin-left: 38px;}
+.add-taglist{
+  display: flex;
+  flex-wrap: wrap;
 
 
 
-
-
-
+}
+.taginputbox{
+  margin-right: 20px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.taginputbox input{
+  width: auto;
+  display: inline-block;
+}
+.taginputbox .im-minus{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 16px;
+  right:-5px;
+  top:-5px;
+  background:rgba(244,81,56,1);
+  color:#ffffff;
+  font-size:12px;
+  cursor: pointer;
+}

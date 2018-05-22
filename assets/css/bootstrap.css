@@ -5293,7 +5293,7 @@ button.close {
   filter: alpha(opacity=80);
 }
 .modal-header {
-  padding: 10px;
+  padding: 18px 10px;
   border-bottom: 1px solid #e7e7e2;
   min-height: 11.42857143px;
 }
@@ -5500,7 +5500,6 @@ button.close {
   left: 50%;
   margin-left: -11px;
   border-bottom-width: 0;
-  border-top-color: #a2a28e;
   border-top-color: #d0d0c6;
   bottom: -11px;
 }
@@ -5516,7 +5515,6 @@ button.close {
   left: -11px;
   margin-top: -11px;
   border-left-width: 0;
-  border-right-color: #a2a28e;
   border-right-color: #d0d0c6;
 }
 .popover.right > .arrow:after {
@@ -5530,7 +5528,6 @@ button.close {
   left: 50%;
   margin-left: -11px;
   border-top-width: 0;
-  border-bottom-color: #a2a28e;
   border-bottom-color: #d0d0c6;
   top: -11px;
 }
@@ -5546,7 +5543,6 @@ button.close {
   right: -11px;
   margin-top: -11px;
   border-right-width: 0;
-  border-left-color: #a2a28e;
   border-left-color: #d0d0c6;
 }
 .popover.left > .arrow:after {
@@ -8189,16 +8185,22 @@ fieldset[disabled] .btn-white.btn-alt.active {
 .modal .modal-content .modal-header {
   padding-left: 20px;
   padding-right: 20px;
-  background: #F45138;
-  color: #ffffff;
+  background: #ffffff;
+  color: #F45138;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  font-weight: normal;
 }
 .modal .modal-content .modal-header .close {
   margin-top: 3px;
-  color: #ffffff;
+  color: #AFAFAF;
   text-shadow: none;
   opacity: 1;
+  border:1px solid #AFAFAF;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
 }
 .modal .modal-content .modal-header .close:hover,
 .modal .modal-content .modal-header .close:focus {

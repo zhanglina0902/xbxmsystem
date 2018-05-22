@@ -4207,7 +4207,7 @@ disabled look for disabled choices in the results dropdown
 ----------------------------------------- */
 .onoffswitch {
   position: relative;
-  width: 85px;
+  width: 75px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -4225,7 +4225,7 @@ disabled look for disabled choices in the results dropdown
   overflow: hidden;
   cursor: pointer;
   border: 2px solid #FFFFFF;
-  border-radius: 50px;
+  border-radius: 5px;
   margin-bottom: 0;
 }
 .onoffswitch-inner {
@@ -4238,40 +4238,40 @@ disabled look for disabled choices in the results dropdown
 .onoffswitch-inner:after {
   float: left;
   width: 50%;
-  height: 28px;
+  height: 36px;
   padding: 0;
-  line-height: 28px;
-  font-size: 14px;
+  line-height: 36px;
+  font-size: 18px;
   color: white;
   font-family: Trebuchet, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: normal;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 .onoffswitch-inner:before {
-  content: "ON";
-  padding-left: 18px;
-  background-color: #f3f5f6;
-  color: #71d398;
+  content: "开";
+  padding-left: 10px;
+  background:rgba(244,81,56,1);
+  color: #ffffff;
 }
 .onoffswitch-inner:after {
-  content: "OFF";
-  padding-right: 18px;
-  background-color: #f3f5f6;
-  color: #f68484;
+  content: "关";
+  padding-right: 10px;
+  background:rgba(244,81,56,1);
+  color: #ffffff;
   text-align: right;
 }
 .onoffswitch-switch {
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 37px;
   margin: 0.5px;
-  background: #f68484;
+  background: #ffffff;
   border: 2px solid #FFFFFF;
-  border-radius: 50px;
+  border-radius: 5px;
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 53px;
+  right: 38px;
   -webkit-transition: all 0.3s ease-in 0s;
   transition: all 0.3s ease-in 0s;
 }
@@ -4279,8 +4279,8 @@ disabled look for disabled choices in the results dropdown
   margin-left: 0;
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-  right: 0px;
-  background-color: #71d398;
+  right: 0;
+  background-color: #ffffff;
 }
 /* -----------------------------------------
    Form wizard

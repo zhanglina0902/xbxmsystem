@@ -27,7 +27,6 @@ body.stop-scrolling {
 a:hover{
     color: rgba(244,81,56,1);
 }
-
 /* ------------------ Sizes --------------------*/
 .f18{
     font-size:18px;
@@ -89,6 +88,10 @@ a:hover{
 .mb25 {
     margin-bottom: 25px !important;
 }
+.mb30{
+    margin-bottom: 30px;!important;
+}
+
 .mb50 {
     margin-bottom: 50px !important;
 }
@@ -129,7 +132,23 @@ a:hover{
 .pb25 {
     padding-bottom: 25px !important;
 }
+.w460{
+    width: 460px;
+}
+.form-group{
+    display: flex;
 
+}
+/*------------------color---------------------*/
+.color-red{
+
+}
+.label-star{
+    display: inline-block;
+    color:rgba(244,21,33,1);
+    width: 10px;
+
+}
 /* ------------------ Typo --------------------*/
 .strong {
     font-weight: bold;
@@ -140,7 +159,6 @@ a:hover{
 .normal {
     font-weight: normal;
 }
-
 /* -----------------------------------------
    Header styles
 ----------------------------------------- */
@@ -227,6 +245,33 @@ a:hover{
     padding:3px 10px;
     font-size:18px;
     border-radius: 5px;
+}
+
+/*组织架构后台header*/
+.group-nav{
+    float: left;
+    position: relative;
+    left:50%;
+    margin-left:-600px;
+    bottom:0;
+}
+.group-nav a{
+    display: inline-block;
+    font-size: 22px;
+    color: #999999;
+    margin:49px 45px 0 45px;
+    padding-bottom:9px;
+    border-bottom:2px solid transparent;
+}
+.group-nav a:hover{
+    text-decoration: none;
+    color: #F45138;
+    border-bottom-color:#F45138 ;
+}
+.group-nav a.active{
+    text-decoration: none;
+    color: #F45138;
+    border-bottom-color:#F45138 ;
 }
 /* -----------------------------------------
    Sidebar styles
@@ -339,6 +384,13 @@ a:hover{
 /* -----------------------------------------
    Content
 ----------------------------------------- */
+#content-admin{
+    margin-left: 0;
+    padding-top:90px;
+}
+.m56{
+    margin:70px 56px 0 56px;
+}
 #content {
     margin-left: 300px;
     padding-top:90px;

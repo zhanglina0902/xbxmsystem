@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>工作台</title>
+        <!-- Mobile specific metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!-- Force IE9 to render in normal mode -->
+        <!--[if IE]>
+        <meta http-equiv="x-ua-compatible" content="IE=9" />
+        <![endif]-->
+        <meta name="description" content=""/>
+        <meta name="keywords" content=""/>
+        <!-- Icons -->
+        <link href="assets/css/icons.css" rel="stylesheet" />
+        <!-- Fav and touch icons -->
+        <link rel="icon" href="assets/img/ico/favicon.ico" type="image/png">
+        <!-- Bootstrap stylesheets (included template modifications) -->
+        <link href="assets/css/bootstrap.css" rel="stylesheet" />
+        <!-- Plugins stylesheets (all plugin custom css) -->
+        <link href="assets/css/plugins.css" rel="stylesheet" />
+        <!-- Main stylesheets (template main css file) -->
+        <link href="assets/css/public.css" rel="stylesheet" />
+        <link href="assets/css/main.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Start #header -->
+        <div id="header">
+            <div class="container-fluid">
+                <div class="navbar">
+                    <!--logo-->
+                    <div class="navbar-header">
+                        <a class="navbar-logo" href="index.html">
+                            <img src="assets/img/xm-logo.svg">
+                        </a>
+                    </div>
+                    <div class="group-nav">
+                        <a href="" class="active">工作台</a>
+                        <a href=""  >组织架构</a>
+                        <a href="" >员工管理</a>
+                        <a href="" >角色权限</a>
+                        <a href=""  >设置</a>
+                    </div>
+                    <nav class="top-nav" role="navigation">
+                        <ul class="nav navbar-nav pull-right nav-right">
+                            <li>
+                                <div class="btn-group btn-account">
+                                    <button class="btn btn-default btn-sm">普通用户</button>
+                                    <button class="btn btn-primary btn-sm">管理员</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- End #header -->
+        <!-- Start #content -->
+        <div id="content-admin" >
+            <!-- Start .content-wrapper -->
+            <div class="content-wrapper">
+                <!-- End .row -->
+                <div class="outlet m56">
+                    <!-- Page start here ( usual with .row ) -->
+                    <div class="xm-contbox">
+                        <div class="xm-title red-bg p43">进度跟进</div>
+                        <div class="xm-contbody p43">
+                            <ul class="admin-worklist clearfix">
+                                <li>
+                                    <a href="recruit.html">
+                                        <img src="assets/img/index-card.svg">
+                                        <p>招聘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href=""  data-toggle="modal" data-target="#myLargeModal">
+                                        <img src="assets/img/icon-add.png">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Page End here -->
+                </div>
+                <!-- End .outlet -->
+            </div>
+            <!-- End .content-wrapper -->
+            <div class="clearfix"></div>
+        </div>
+        <!-- End #content -->
+        <!-- Modal 新增 功能模块弹出层内容 -->
+        <div class="modal fade" id="myLargeModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h3 class="modal-title" id="myLargeModalLabel">新增功能模块</h3>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal new-add" role="form">
+                            <div class="form-group mb30">
+                                <label class="pull-left w160 control-label"><span class="label-star">*</span>模块LOGO</label>
+                                <div class="pull-left">
+                                    <div class="upload-logo">
+                                        <canvas id="cvs" width="200" height="200"></canvas>
+                                        <span class="btn upload">上传LOGO<input type="file" class="upload_pic" id="upload" /></span>
+                                        <span class="tip-text">建议上传尺寸120*120</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group  mb30">
+                                <label class="pull-left w160 control-label"><span class="label-star">*</span>模块名称</label>
+                                <div class="pull-left">
+                                    <div class=" form-inline">
+                                        <input type="text" class="form-control  w460" placeholder="模块名称">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb30">
+                                <label class="pull-left w160 control-label"><span class="label-star">*</span>功能介绍</label>
+                                <div class="pull-left">
+                                    <div class="form-inline">
+                                        <textarea class="form-control w460" rows="3" placeholder="功能介绍"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group  mb30">
+                                <label class="pull-left w160 control-label"><span class="label-star">*</span>PC首页地址</label>
+                                <div class="pull-left ">
+                                    <div class="form-inline">
+                                        <input type="text" class="form-control  w460" placeholder="首页网址">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group  mb30">
+                                <label class="pull-left w160 control-label"><span class="label-star">*</span>移动端首页地址</label>
+                                <div class="pull-left ">
+                                    <div class="form-inline">
+                                        <input type="text" class="form-control  w460" placeholder=""渠道名称>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group  mb30">
+                                <label class="pull-left w160 control-label"><span class="label-star" >*</span>可见范围</label>
+                                <div class="pull-left">
+                                    <div class="form-inline">
+                                        <input type="text" class="form-control  w460" placeholder=" 选择部门和职工">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="pull-left w160 control-label"><span class="label-star"> </span>启用</label>
+                                <div class="pull-left">
+                                    <div class="form-inline">
+                                        <input type="checkbox" class="switch noStyle" name="switch" id="switch" value="option1" checked>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mt25">
+                                <div class="ml205">
+                                    <button class="btn btn-primary f18 w160 btn-lg" type="submit">确定</button>
+                                    <button class="btn btn-default ml25 f18 w160 btn-lg" type="submit">取消</button>
+                                </div>
+                            </div>
+                            <!-- End .form-group  -->
+                        </form>
+                    </div>
+
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+        <!-- Important javascript libs(put in all pages) -->
+        <script src="assets/js/jquery-1.8.3.min.js"></script>
+        <script src="assets/js/jquery-ui.js"></script>
+        <![endif]-->
+        <!-- Bootstrap plugins -->
+        <script src="assets/js/bootstrap/bootstrap.js"></script>
+        <!-- Handle responsive view functions -->
+        <script src="assets/js/jRespond.min.js"></script>
+        <!-- Custom scroll for sidebars,tables and etc. -->
+        <script src="assets/plugins/core/slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="assets/plugins/core/slimscroll/jquery.slimscroll.horizontal.min.js"></script>
+        <!-- Other plugins ( load only nessesary plugins for every page) -->
+        <script src="assets/plugins/forms/icheck/jquery.icheck.js"></script>
+        <script src="assets/plugins/misc/highlight/highlight.pack.js"></script>
+        <script src="assets/plugins/misc/countTo/jquery.countTo.js"></script>
+        <!--checkstyles-->
+        <script src="assets/plugins/forms/checkall/jquery.CheckAll.js"></script>
+        <!--time-->
+        <script src="assets/plugins/forms/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+        <!--switch-->
+        <script src="assets/plugins/forms/switch/jquery.onoff.min.js"></script>
+        <script src="assets/js/jquery.sprFlat.js"></script>
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/pages/forms.js"></script>
+
+    </body>
+</html>
