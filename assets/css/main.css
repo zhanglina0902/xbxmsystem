@@ -1,63 +1,37 @@
 
 /*index*/
-
 .indextop-notice{
-  font-size: 18px;
+  font-size: 14px;
+  padding:20px;
 }
 .xm-contbox{
-  margin-bottom: 65px;
+  margin-bottom: 30px;
 }
 .xm-title{
-  padding:6px 0;
-  font-size:20px;
+  font-size: 16px;
+  padding:6px 20px;
   color:rgba(244,81,56,1);
   background:rgba(244,81,56,0.1094);
 }
-.w160{
-  width: 160px;
-}
-.w186{
-  width:186px;!important;
-}
-.w120{
-  width: 120px;
-}
-.w100{
-  width: 100px;
-}
-.w700{
-  width: 700px;!important;
-}
-.ml160{
-  margin-left: 160px;
-}
-.ml205{
-  margin-left: 205px;
-}
-.p43{
-  padding-left: 43px;
-  padding-right:43px;
-}
-.xm-contbody h3{
-  font-size:20px;
+.xm-contbody {
   font-weight: normal;
-  margin-bottom: 0;
+}
+.p20{
+  padding-left: 20px;
+  padding-right:20px;
 }
 .worklist{
   list-style: none;
   margin:0;
   padding:0;
   display: flex;
+  flex-wrap: wrap;
 }
 .worklist li{
   display: inline-block;
-  margin-top: 57px;
   text-align: center;
-  margin-right:225px;
-}
-
-.worklist li:nth-child(4n){
-  margin-right:0;
+  margin-right: 80px;
+  margin-top: 30px;
 }
 .worklist li a{
   display: block;
@@ -67,7 +41,6 @@
 }
 .worklist li a p{
   margin-top: 10px;
-  font-size:20px;
   color:rgba(0,0,0,1);
 }
 
@@ -80,9 +53,9 @@
 .admin-worklist li{
   display: inline-block;
   float: left;
-  margin-top: 57px;
+  margin-top: 30px;
   text-align: center;
-  margin-right:58px;
+  margin-right:80px;
 }
 .admin-worklist li a{
   display: block;
@@ -92,77 +65,46 @@
 }
 .admin-worklist li a p{
   margin-top: 10px;
-  font-size:20px;
   color:rgba(0,0,0,1);
 }
 .admin-worklist li:last-child{
   border:1px solid #F45138;
-  width: 93px;
-  height: 93px;
+  width: 84px;
+  height: 84px;
 }
-.admin-worklist li:last-child a i{
-  display: inline-block;
-  font-size: 60px;
-  vertical-align: middle;
-  font-weight: lighter;
+.admin-worklist li:last-child a img{
+  width: 100%;
 }
+/*admin工作台 end*/
 
 
+/*用人申请topmenu*/
 .listmenu{
   max-width: 852px;
-  margin:48px auto;
+  margin:30px auto;
   left:50%;
   margin-left: -426px;
-
 }
 .listmenu button{
-  width: 142px;
-  font-size:20px;
+  width: 120px;
 }
 
-/*批量删除*/
-.xm-allbutton a{
-  font-size: 18px;
-  width: 135px;
-
-}
-/*右侧搜索*/
-.right-search input {
-  border: 1px solid #cccccc;
-  background: none;
-  height: 40px;
-  padding-left: 40px;
-  width: 100%;
-  border-radius: 3px;
-}
-.right-search button {
-  position: absolute;
-  left: 8px;
-  top: 8px;
-  border: none;
-  background: none;
-}
-.right-search button i {
-  color: #acb1b8;
-}
-
-/*table*/
+/*table 列表*/
 .table > thead > tr > th,
 .table > tbody > tr > th,
 .table > tfoot > tr > th,
 .table > thead > tr > td,
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
-  padding: 20px 10px;
+  padding: 20px 5px;
   vertical-align: middle;
-  font-size: 18px;
   border:1px solid transparent;
 }
-
 .table.applylisttable > thead > tr > th{
-  padding:20px 10px;
+  padding:15px 5px;
   border-top:1px solid #cccccc;
   border-bottom:1px solid #cccccc;
+  font-weight: normal;
 }
 .table.applylisttable > thead > tr > th:first-child{
   border-left:1px solid #cccccc;
@@ -174,22 +116,66 @@
   border-top:1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
 }
-.table-striped > tbody{
-
-}
 .table-striped > tbody > tr:nth-child(odd) > td,
 .table-striped > tbody > tr:nth-child(odd) > th {
   background:rgba(255,241,239,1);
 }
-.w170{
-  width:170px;
+.operation-2{
+  width: 100px;
 }
-.w140{
-  width:140px;
+.operation-3{
+  width: 133px;
+
 }
+.operation-3 a{
+  margin-right: 10px;
+}
+.operation-3:nth-child(3n){
+  margin-right: 0;
+}
+
+
+/*分页*/
+.paging{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+/*-------用人申请--------*/
+.form-apply label.control-label{
+  display: inline-block;
+  width: 120px;
+  font-weight: normal;
+  text-align: left;
+  line-height: 32px;
+}
+.form-apply .form-control{
+  width: 160px;
+  margin-right: 15px;
+}
+.form-apply textarea.form-control{
+  width: 500px;
+}
+.form-apply .form-btn{
+  margin-left: 120px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+}
+.form-apply .form-btn .btn{
+  width: 120px;
+  margin-right: 30px;
+}
+.mt3{
+  margin-top: 3px;
+}
+/*-------用人申请 end--------*/
+
+
 .leaderlist label{
   font-weight: normal;
-  font-size:18px;
+  font-size:14px;
 }
 
 .leaderlist-search {
@@ -216,7 +202,7 @@
   color: #acb1b8;
 }
 .lead-list{
-  font-size:18px;
+  font-size:14px;
   height: 300px;
   overflow-y: scroll;
 }
@@ -224,26 +210,88 @@
   font-weight: normal;
 }
 .modal-footer .btn{
-  font-size: 18px;
+  font-size: 14px;
 }
 
+
+
+/*-------基础设置--------*/
+.form-recruit label.control-label{
+  display: inline-block;
+  width: 150px;
+  font-weight: normal;
+  text-align: left;
+  line-height: 32px;
+}
+.form-recruit .form-control{
+  width: 400px;
+}
+.form-recruit .form-btn{
+  margin-left: 150px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+}
+.form-recruit .form-btn .btn{
+  width: 120px;
+  margin-right: 30px;
+}
+
+/*-------基础设置 end--------*/
+
+/*招聘列表*/
+
+.list-topform{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.list-topform .w160{
+  width: 160px;
+  margin-bottom: 15px;
+  margin-right: 20px;
+}
+.form-fx{
+  margin-top: 5px;
+}
+.top-btngroup{
+  padding-bottom: 20px;
+}
+
+/*批量删除*/
+.xm-allbutton a{
+  width: 120px;
+}
+/*右侧搜索*/
 .right-search{
   position: relative;
-
-
 }
-.form-horizontal.new-add .control-label{
-  text-align: left;
-  font-size: 18px;
-  font-weight: normal;
+.right-search input {
+  border: 1px solid #cccccc;
+  background: none;
+  height: 42px;
+  padding-left: 40px;
+  width: 100%;
+  border-radius: 5px;
 }
+.right-search button {
+  position: absolute;
+  left: 8px;
+  top: 9px;
+  border: none;
+  background: none;
+}
+.right-search button i {
+  color: #acb1b8;
+}
+
+/*招聘列表end*/
+
 @media (min-width: 768px) {
   .form-inline .form-control.w112 {
     width: 112px;
   }
-  .form-inline .form-control.w460 {
-    width: 460px;
-  }
+
 
 }
 
@@ -260,7 +308,7 @@
   text-align: center;
   background: transparent;
   display: block;
-  font-size: 18px;
+  font-size: 14px;
   position: absolute;
   left:0;
   top:0;
@@ -292,7 +340,7 @@
   color: #cccccc;
   position: relative;
   bottom: 50px;
-  font-size:18px;
+  font-size:14px;
   margin-left: 10px;
 }
 
@@ -334,4 +382,24 @@
 }
 .new-modalbtn .btn{
   width: 160px;
+}
+
+
+.w186{
+  width:186px;!important;
+}
+.w120{
+  width: 120px;
+}
+.w100{
+  width: 100px;
+}
+.w700{
+  width: 700px;!important;
+}
+.ml160{
+  margin-left: 160px;
+}
+.ml205{
+  margin-left: 205px;
 }

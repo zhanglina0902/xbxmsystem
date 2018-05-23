@@ -60,11 +60,11 @@
             <!-- Start .content-wrapper -->
             <div class="content-wrapper">
                 <!-- End .row -->
-                <div class="outlet m56">
+                <div class="pages working-pages">
                     <!-- Page start here ( usual with .row ) -->
                     <div class="xm-contbox">
-                        <div class="xm-title red-bg p43">进度跟进</div>
-                        <div class="xm-contbody p43">
+                        <div class="xm-title">进度跟进</div>
+                        <div class="xm-contbody p20">
                             <ul class="admin-worklist clearfix">
                                 <li>
                                     <a href="recruit.html">
@@ -73,7 +73,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href=""  data-toggle="modal" data-target="#myLargeModal">
+                                    <a href=""  data-toggle="modal" data-target="#NewModal">
                                         <img src="assets/img/icon-add.png">
                                     </a>
                                 </li>
@@ -89,84 +89,83 @@
         </div>
         <!-- End #content -->
         <!-- Modal 新增 功能模块弹出层内容 -->
-        <div class="modal fade" id="myLargeModal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
+        <div class="modal fade" id="NewModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog ">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h3 class="modal-title" id="myLargeModalLabel">新增功能模块</h3>
+                        <h4 class="modal-title" id="myLargeModalLabel">新增功能模块</h4>
                     </div>
                     <div class="modal-body">
-                        <form class="form-horizontal new-add" role="form">
-                            <div class="form-group mb30">
-                                <label class="w160 control-label"><span class="label-star">*</span>模块LOGO</label>
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group form-recruit">
+                                <label class="control-label"><span class="label-star">*</span>模块LOGO</label>
                                 <div class="clearfix">
                                     <div class="upload-logo">
-                                        <canvas id="cvs" width="200" height="200"></canvas>
+                                        <canvas id="cvs" width="120" height="120"></canvas>
                                         <span class="btn upload">上传LOGO<input type="file" class="upload_pic" id="upload" /></span>
                                         <span class="tip-text">建议上传尺寸120*120</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group  mb30">
-                                <label class="w160 control-label"><span class="label-star">*</span>模块名称</label>
+                            <div class="form-group form-recruit">
+                                <label class="control-label"><span class="label-star">*</span>模块名称</label>
                                 <div class="clearfix">
                                     <div class=" form-inline">
-                                        <input type="text" class="form-control  w460" placeholder="模块名称">
+                                        <input type="text" class="form-control" placeholder="模块名称">
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group mb30">
-                                <label class="w160 control-label"><span class="label-star">*</span>功能介绍</label>
+                            <div class="form-group form-recruit">
+                                <label class=" w160 control-label"><span class="label-star">*</span>功能介绍</label>
                                 <div class="clearfix">
                                     <div class="form-inline">
-                                        <textarea class="form-control w460" rows="3" placeholder="功能介绍"></textarea>
+                                        <textarea class="form-control" rows="3" placeholder="功能介绍"></textarea>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group  mb30">
-                                <label class=" w160 control-label"><span class="label-star">*</span>PC首页地址</label>
+                            <div class="form-group form-recruit">
+                                <label class="control-label"><span class="label-star">*</span>PC首页地址</label>
                                 <div class="clearfix">
                                     <div class="form-inline">
-                                        <input type="text" class="form-control  w460" placeholder="首页网址">
+                                        <input type="text" class="form-control" placeholder="首页网址">
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group  mb30">
-                                <label class="w160 control-label"><span class="label-star">*</span>移动端首页地址</label>
+                            <div class="form-group form-recruit">
+                                <label class="control-label"><span class="label-star">*</span>移动端首页地址</label>
                                 <div class="clearfix">
                                     <div class="form-inline">
-                                        <input type="text" class="form-control  w460" placeholder=""渠道名称>
+                                        <input type="text" class="form-control" placeholder="渠道名称">
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group  mb30">
-                                <label class="w160 control-label"><span class="label-star" >*</span>可见范围</label>
+                            <div class="form-group form-recruit">
+                                <label class="control-label"><span class="label-star" >*</span>可见范围</label>
                                 <div class="clearfix">
                                     <div class="form-inline">
-                                        <input type="text" class="form-control  w460" placeholder=" 选择部门和职工">
+                                        <input type="text" class="form-control" placeholder=" 选择部门和职工">
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="form-group">
-                                <label class=" w160 control-label"><span class="label-star"> </span>启用</label>
+                            <div class="form-group form-recruit">
+                                <label class="control-label"><span class="label-star"> </span>启用</label>
                                 <div class="clearfix">
                                     <div class="form-inline">
                                         <input type="checkbox" class="switch noStyle" name="switch" id="switch" value="option1" checked>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group mt25">
-                                <div class="ml160">
-                                    <button class="btn btn-primary w160 mr25" type="submit">确定</button>
-                                    <button class="btn btn-default w160" type="submit">取消</button>
+                            <div class="form-group form-recruit">
+                                <div class="form-btn">
+                                    <button class="btn btn-primary" type="submit">确定</button>
+                                    <button class="btn btn-default " type="submit">取消</button>
                                 </div>
                             </div>
                             <!-- End .form-group  -->
                         </form>
                     </div>
-
                 </div>
                 <!-- /.modal-content -->
             </div>

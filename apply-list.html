@@ -90,337 +90,318 @@
                     <div class="col-lg-12">
                         <ul  class="breadcrumb p43">
                             <li><a href="">招聘管理</a><i class="en-arrow-right7"></i></li>
-                            <li><a href="">用人申请</a><i class="en-arrow-right7"></i></li>
+                            <li><a href="apply-list.html">用人申请</a><i class="en-arrow-right7"></i></li>
                             <li>用人申请列表</li>
                         </ul>
                     </div>
                 </div>
                 <!-- End .row -->
-                <div class="outlet">
+                <div class="pages">
                     <!-- Start .outlet -->
                     <!-- Page start here ( usual with .row ) -->
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="xm-contbox">
-                                <div class="xm-title red-bg p43">任务列表</div>
-                                <div class="xm-contbody">
-                                    <div class="btn-group listmenu">
-                                        <button type="button" class="btn btn-primary ">全部</button>
-                                        <button type="button" class="btn btn-primary btn-alt">已通过</button>
-                                        <button type="button" class="btn btn-primary btn-alt">待审批</button>
-                                        <button type="button" class="btn btn-primary btn-alt">审核中</button>
-                                        <button type="button" class="btn btn-primary btn-alt">未通过</button>
-                                        <button type="button" class="btn btn-primary btn-alt">已延期</button>
-                                    </div>
+                    <div class="xm-contbox">
+                        <div class="xm-title">任务列表</div>
+                        <div class="xm-contbody">
+                            <div class="btn-group listmenu">
+                                <button type="button" class="btn btn-primary ">全部</button>
+                                <button type="button" class="btn btn-primary btn-alt">已通过</button>
+                                <button type="button" class="btn btn-primary btn-alt">待审批</button>
+                                <button type="button" class="btn btn-primary btn-alt">审核中</button>
+                                <button type="button" class="btn btn-primary btn-alt">未通过</button>
+                                <button type="button" class="btn btn-primary btn-alt">已延期</button>
+                            </div>
+                            <div class="clearfix">
+                                <form class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <div class="list-topform">
+                                            <div class="w160">
+                                                <select class="form-control">
+                                                    <option value="申请部门">申请部门</option>
+                                                    <option value="美选">美选</option>
+                                                    <option value="精选">精选</option>
+                                                    <option value="优选">优选</option>
+                                                    <option value="集团系统">集团系统</option>
+                                                </select>
+                                            </div>
+                                            <div class="w160">
+                                                <select class="form-control">
+                                                    <option value="申请职位">申请职位</option>
+                                                    <option value="运营">运营</option>
+                                                    <option value="销售">销售</option>
+                                                    <option value="产品">产品</option>
+                                                    <option value="设计">设计</option>
+                                                    <option value="技术">技术</option>
+                                                    <option value="人事">人事</option>
+                                                    <option value="其他">其他</option>
+                                                </select>
+                                            </div>
+                                            <div class="w160">
+                                                <select class="form-control">
+                                                    <option value="申请人">申请人</option>
+                                                    <option value="李佳">李佳</option>
+                                                    <option value="张鹏">张鹏</option>
+                                                    <option value="王帅">王帅</option>
+                                                </select>
+                                            </div>
+                                            <div class="w160">
+                                                <div class="input-group">
+                                                    <input class="form-control datetime-picker2" type="text" value="" placeholder="申请时间">
+                                                    <span class="input-group-addon"><i class="fa-calendar"></i></span>
+                                                </div>
+                                            </div>
 
+                                            <div class="w160">
+                                                <select class="form-control">
+                                                    <option value="是否支持内推">是否支持内推</option>
+                                                    <option value="是">是</option>
+                                                    <option value="否">否</option>
 
-                                    <div class="row">
-                                        <div class="col-lg-12 mb10 ">
-                                            <div class="">
-                                                <form class="form-horizontal group-border " role="form">
-                                                    <div class="form-group">
-                                                        <div class="col-lg-12 col-md-12">
-                                                            <div class="row">
-                                                                <div class="col-lg-2 col-md-2 mb20 w160">
-                                                                    <select class="form-control">
-                                                                        <option value="申请部门">申请部门</option>
-                                                                        <option value="美选">美选</option>
-                                                                        <option value="精选">精选</option>
-                                                                        <option value="优选">优选</option>
-                                                                        <option value="集团系统">集团系统</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div class="col-lg-2 col-md-2 mb20 w160">
-                                                                    <select class="form-control">
-                                                                        <option value="申请职位">申请职位</option>
-                                                                        <option value="运营">运营</option>
-                                                                        <option value="销售">销售</option>
-                                                                        <option value="产品">产品</option>
-                                                                        <option value="设计">设计</option>
-                                                                        <option value="技术">技术</option>
-                                                                        <option value="人事">人事</option>
-                                                                        <option value="其他">其他</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div class="col-lg-2 col-md-2 mb20 w160">
-                                                                    <select class="form-control">
-                                                                        <option value="申请人">申请人</option>
-                                                                        <option value="李佳">李佳</option>
-                                                                        <option value="张鹏">张鹏</option>
-                                                                        <option value="王帅">王帅</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div class="col-lg-2 col-md-2">
-                                                                    <div class="input-group">
-                                                                        <input class="form-control datetime-picker2" type="text" value="" placeholder="申请时间">
-                                                                        <span class="input-group-addon"><i class="fa-calendar"></i></span>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="col-lg-2 col-md-2 mb20 w186">
-                                                                    <select class="form-control">
-                                                                        <option value="是否支持内推">是否支持内推</option>
-                                                                        <option value="是">是</option>
-                                                                        <option value="否">否</option>
-
-                                                                    </select>
-                                                                </div>
-                                                                <div class="col-lg-2 col-md-2 mb20 w186">
-                                                                    <select class="form-control">
-                                                                        <option value="是否支持内推">是否支持转岗</option>
-                                                                        <option value="是">是</option>
-                                                                        <option value="否">否</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row mb25">
-                                                                <div class="col-lg-4 col-md-4">
-                                                                    <label class="checkbox-inline f18 mr50">
-                                                                        <input type="checkbox" value="option2" checked="checked">增补
-                                                                    </label>
-                                                                    <label class="checkbox-inline f18">
-                                                                        <input type="checkbox" value="option2" >增编
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </form>
+                                                </select>
+                                            </div>
+                                            <div class="w160">
+                                                <select class="form-control">
+                                                    <option value="是否支持内推">是否支持转岗</option>
+                                                    <option value="是">是</option>
+                                                    <option value="否">否</option>
+                                                </select>
+                                            </div>
+                                            <div class="w160">
+                                                <div class="form-fx">
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" value="option2" checked="checked">增补
+                                                    </label>
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" value="option2" >增编
+                                                    </label>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                </form>
+                            </div>
 
-                                    <div class="row">
-                                        <div class="col-lg-12 clearfix">
-                                            <div class="mb20 pull-left xm-allbutton">
-                                                <a type="button" class="btn btn-primary btn-alt" data-toggle="modal" data-target="#NewmyModal">新增</a>
-                                                <a type="button" class="btn btn-primary btn-alt">批量启用</a>
-                                                <a type="button" class="btn btn-primary btn-alt">批量禁用</a>
-                                                <a type="button" class="btn btn-primary btn-alt">批量删除</a>
-                                                <a type="button" class="btn btn-primary btn-alt">批量导出</a>
-                                            </div>
-                                            <div class="pull-right right-search">
-                                                <form>
-                                                    <input type="text" name="search" placeholder="Search ...">
-                                                    <button type="submit"><i class="ec-search s20"></i>
-                                                    </button>
-                                                </form>
-                                            </div>
-                                        </div>
+                            <div class="top-btngroup clearfix">
+                                <div class="pull-left xm-allbutton">
+                                    <a  type="button" class="btn btn-primary btn-alt" data-toggle="modal" data-target="#NewmyModal">新增</a>
+                                    <a  type="button" class="btn btn-primary btn-alt">批量启用</a>
+                                    <a  type="button" class="btn btn-primary btn-alt">批量禁用</a>
+                                    <a  type="button" class="btn btn-primary btn-alt">批量删除</a>
+                                    <a  type="button" class="btn btn-primary btn-alt">批量导出</a>
+                                </div>
+                                <div class="pull-right right-search">
+                                    <form>
+                                        <input type="text" name="search" placeholder="Search ...">
+                                        <button type="submit"><i class="ec-search s20"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <table class="table table-striped applylisttable">
+                                    <thead>
+                                    <tr>
+                                        <th class="text-center">
+                                            <label class="checkbox">
+                                                <input class="check-all" type="checkbox" value="option1">
+                                            </label>
+                                        </th>
+                                        <th class="text-center">编号</th>
+                                        <th class="text-center">申请部门</th>
+                                        <th class="text-center">申请岗位</th>
+                                        <th class="text-center">申请人</th>
+                                        <th class="text-center">申请时间</th>
+                                        <th class="text-center">增补</th>
+                                        <th class="text-center">增编</th>
+                                        <th class="text-center">审批状态</th>
+                                        <th class="text-center">内推</th>
+                                        <th class="text-center">内部转岗</th>
+                                        <th class="text-center operation-3" >操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td  class="text-center">
+                                            <label class="checkbox">
+                                                <input class="check" type="checkbox" value="option2">
+                                            </label>
+                                        </td>
+                                        <td class="text-center">PA20180510095</td>
+                                        <td class="text-center">科创中心</td>
+                                        <td class="text-center">前端工程师</td>
+                                        <td class="text-center">张鹏</td>
+                                        <td class="text-center">2018-5-10</td>
+                                        <td class="text-center">否</td>
+                                        <td class="text-center">是</td>
+                                        <td class="text-center">已通过</td>
+                                        <td class="text-center">是</td>
+                                        <td class="text-center">是</td>
+                                        <td class="text-left operation-3">
+                                            <a href="" >查看</a>
+                                            <a href="" >发布</a>
+                                            <a href="" data-toggle="modal" data-target="#mySmallModal">移交</a>
+                                            <a href=""  data-toggle="modal" data-target="#myModal4">启用</a>
+                                            <a href=""  data-toggle="modal" data-target="#myModal5">禁用</a>
+                                            <a href="" data-toggle="modal" data-target="#myModal">删除</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td  class="text-center">
+                                            <label class="checkbox">
+                                                <input class="check" type="checkbox" value="option2">
+                                            </label>
+                                        </td>
+                                        <td class="text-center">PA20180510095</td>
+                                        <td class="text-center">科创中心</td>
+                                        <td class="text-center">前端工程师</td>
+                                        <td class="text-center">张鹏</td>
+                                        <td class="text-center">2018-5-10</td>
+                                        <td class="text-center">否</td>
+                                        <td class="text-center">是</td>
+                                        <td class="text-center">待审批</td>
+                                        <td class="text-center">是</td>
+                                        <td class="text-center">否</td>
+                                        <td class="text-left operation-3">
+                                            <a href="" >查看</a>
+                                            <a href="" >撤销</a>
+                                            <a href="" >移交</a>
+                                            <a href="" >启用</a>
+                                            <a href="" >禁用</a>
+                                            <a href="" >删除</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td  class="text-center">
+                                            <label class="checkbox">
+                                                <input class="check" type="checkbox" value="option2">
+                                            </label>
+                                        </td>
+                                        <td class="text-center">PA20180510095</td>
+                                        <td class="text-center">科创中心</td>
+                                        <td class="text-center">前端工程师</td>
+                                        <td class="text-center">张鹏</td>
+                                        <td class="text-center">2018-5-10</td>
+                                        <td class="text-center">否</td>
+                                        <td class="text-center">是</td>
+                                        <td class="text-center">审批中</td>
+                                        <td class="text-center">否</td>
+                                        <td class="text-center">是</td>
+                                        <td class="text-left operation-3">
+                                            <a href="" >查看</a>
+                                            <a href="" >审批</a>
+                                            <a href="" >启用</a>
+                                            <a href="" >禁用</a>
+                                            <a href="" >删除</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td  class="text-center">
+                                            <label class="checkbox">
+                                                <input class="check" type="checkbox" value="option2">
+                                            </label>
+                                        </td>
+                                        <td class="text-center">PA20180510095</td>
+                                        <td class="text-center">科创中心</td>
+                                        <td class="text-center">前端工程师</td>
+                                        <td class="text-center">张鹏</td>
+                                        <td class="text-center">2018-5-10</td>
+                                        <td class="text-center">否</td>
+                                        <td class="text-center">是</td>
+                                        <td class="text-center">已延期</td>
+                                        <td class="text-center">是</td>
+                                        <td class="text-center">否</td>
+                                        <td class="text-left operation-3">
+                                            <a href="" >查看</a>
+                                            <a href="" >修改</a>
+                                            <a href="" >启用</a>
+                                            <a href="" >禁用</a>
+                                            <a href="" >删除</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td  class="text-center">
+                                            <label class="checkbox">
+                                                <input class="check" type="checkbox" value="option1">
+                                            </label>
+                                        </td>
+                                        <td class="text-center">PA20180510095</td>
+                                        <td class="text-center">科创中心</td>
+                                        <td class="text-center">JAVA工程师</td>
+                                        <td class="text-center">张鹏</td>
+                                        <td class="text-center">2018-5-10</td>
+                                        <td class="text-center">否</td>
+                                        <td class="text-center">是</td>
+                                        <td class="text-center">未通过</td>
+                                        <td class="text-center">否</td>
+                                        <td class="text-center">是</td>
+                                        <td class="text-left operation-3">
+                                            <a href="" >查看</a>
+                                            <a href="" >修改</a>
+                                            <a href="" >启用</a>
+                                            <a href="" >停用</a>
+                                            <a href="" >删除</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td  class="text-center">
+                                            <label class="checkbox">
+                                                <input class="check" type="checkbox" value="option1">
+                                            </label>
+                                        </td>
+                                        <td class="text-center">PA20180510095</td>
+                                        <td class="text-center">科创中心</td>
+                                        <td class="text-center">JAVA工程师</td>
+                                        <td class="text-center">张鹏</td>
+                                        <td class="text-center">2018-5-10</td>
+                                        <td class="text-center">否</td>
+                                        <td class="text-center">是</td>
+                                        <td class="text-center">已通过</td>
+                                        <td class="text-center">否</td>
+                                        <td class="text-center">是</td>
+                                        <td class="text-left operation-3">
+                                            <a href="" >查看</a>
+                                            <a href="" >发布</a>
+                                            <a href="" >移交</a>
+                                            <a href="" >启用</a>
+                                            <a href="" >停用</a>
+                                            <a href="" >删除</a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="paging">
+                                <div class="pull-left">
+                                    <div  class="mt25 mb20  text-left">
+                                        共计100条  增补20条  增编30条
                                     </div>
-                                    <div class="row">
-                                        <div class="col-lg-12 col-md-12">
-                                            <table class="table table-striped applylisttable">
-                                                <thead>
-                                                <tr>
-                                                    <th class="text-center">
-                                                        <label class="checkbox">
-                                                            <input class="check-all" type="checkbox" value="option1">
-                                                        </label>
-                                                    </th>
-                                                    <th class="text-center">编号</th>
-                                                    <th class="text-center">申请部门</th>
-                                                    <th class="text-center">申请岗位</th>
-                                                    <th class="text-center">申请人</th>
-                                                    <th class="text-center">申请时间</th>
-                                                    <th class="text-center">增补</th>
-                                                    <th class="text-center">增编</th>
-                                                    <th class="text-center">审批状态</th>
-                                                    <th class="text-center">内推</th>
-                                                    <th class="text-center">内部转岗</th>
-                                                    <th class="text-center w170" >操作</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                <tr>
-                                                    <td  class="text-center">
-                                                        <label class="checkbox">
-                                                            <input class="check" type="checkbox" value="option2">
-                                                        </label>
-                                                    </td>
-                                                    <td class="text-center">PA20180510095</td>
-                                                    <td class="text-center">科创中心</td>
-                                                    <td class="text-center">前端工程师</td>
-                                                    <td class="text-center">张鹏</td>
-                                                    <td class="text-center">2018-5-10</td>
-                                                    <td class="text-center">否</td>
-                                                    <td class="text-center">是</td>
-                                                    <td class="text-center">已通过</td>
-                                                    <td class="text-center">是</td>
-                                                    <td class="text-center">是</td>
-                                                    <td class="text-center w170">
-                                                        <a href="" class="mr10">查看</a>
-                                                        <a href="" class="mr10">发布</a>
-                                                        <a href="" data-toggle="modal" data-target="#mySmallModal">移交</a>
-                                                        <a href="" class="mr10" data-toggle="modal" data-target="#myModal4">启用</a>
-                                                        <a href="" class="mr10" data-toggle="modal" data-target="#myModal5">禁用</a>
-                                                        <a href="" data-toggle="modal" data-target="#myModal">删除</a>
-
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td  class="text-center">
-                                                        <label class="checkbox">
-                                                            <input class="check" type="checkbox" value="option2">
-                                                        </label>
-                                                    </td>
-                                                    <td class="text-center">PA20180510095</td>
-                                                    <td class="text-center">科创中心</td>
-                                                    <td class="text-center">前端工程师</td>
-                                                    <td class="text-center">张鹏</td>
-                                                    <td class="text-center">2018-5-10</td>
-                                                    <td class="text-center">否</td>
-                                                    <td class="text-center">是</td>
-                                                    <td class="text-center">待审批</td>
-                                                    <td class="text-center">是</td>
-                                                    <td class="text-center">否</td>
-                                                    <td class="text-center w170">
-                                                        <a href="" class="mr10">查看</a>
-                                                        <a href="" class="mr10">撤销</a>
-                                                        <a href="" >移交</a>
-                                                        <a href="" class="mr10">启用</a>
-                                                        <a href="" class="mr10">禁用</a>
-                                                        <a href="" >删除</a>
-
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td  class="text-center">
-                                                        <label class="checkbox">
-                                                            <input class="check" type="checkbox" value="option2">
-                                                        </label>
-                                                    </td>
-                                                    <td class="text-center">PA20180510095</td>
-                                                    <td class="text-center">科创中心</td>
-                                                    <td class="text-center">前端工程师</td>
-                                                    <td class="text-center">张鹏</td>
-                                                    <td class="text-center">2018-5-10</td>
-                                                    <td class="text-center">否</td>
-                                                    <td class="text-center">是</td>
-                                                    <td class="text-center">审批中</td>
-                                                    <td class="text-center">否</td>
-                                                    <td class="text-center">是</td>
-                                                    <td class="text-left w170">
-                                                        <a href="" class="mr10">查看</a>
-                                                        <a href="" class="mr10">审批</a>
-                                                        <a href="" >启用</a>
-                                                        <a href="" class="mr10">禁用</a>
-                                                        <a href="" >删除</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td  class="text-center">
-                                                        <label class="checkbox">
-                                                            <input class="check" type="checkbox" value="option2">
-                                                        </label>
-                                                    </td>
-                                                    <td class="text-center">PA20180510095</td>
-                                                    <td class="text-center">科创中心</td>
-                                                    <td class="text-center">前端工程师</td>
-                                                    <td class="text-center">张鹏</td>
-                                                    <td class="text-center">2018-5-10</td>
-                                                    <td class="text-center">否</td>
-                                                    <td class="text-center">是</td>
-                                                    <td class="text-center">已延期</td>
-                                                    <td class="text-center">是</td>
-                                                    <td class="text-center">否</td>
-                                                    <td class="text-left w170">
-                                                        <a href="" class="mr10">查看</a>
-                                                        <a href="" class="mr10">修改</a>
-                                                        <a href="" class="mr10">启用</a>
-                                                        <a href="" class="mr10">禁用</a>
-                                                        <a href="" >删除</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td  class="text-center">
-                                                        <label class="checkbox">
-                                                            <input class="check" type="checkbox" value="option1">
-                                                        </label>
-                                                    </td>
-                                                    <td class="text-center">PA20180510095</td>
-                                                    <td class="text-center">科创中心</td>
-                                                    <td class="text-center">JAVA工程师</td>
-                                                    <td class="text-center">张鹏</td>
-                                                    <td class="text-center">2018-5-10</td>
-                                                    <td class="text-center">否</td>
-                                                    <td class="text-center">是</td>
-                                                    <td class="text-center">未通过</td>
-                                                    <td class="text-center">否</td>
-                                                    <td class="text-center">是</td>
-                                                    <td class="text-left w170">
-                                                        <a href="" class="mr10">查看</a>
-                                                        <a href="" class="mr10">修改</a>
-                                                        <a href="" class="mr10">启用</a>
-                                                        <a href="" class="mr10">停用</a>
-                                                        <a href="" >删除</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td  class="text-center">
-                                                        <label class="checkbox">
-                                                            <input class="check" type="checkbox" value="option1">
-                                                        </label>
-                                                    </td>
-                                                    <td class="text-center">PA20180510095</td>
-                                                    <td class="text-center">科创中心</td>
-                                                    <td class="text-center">JAVA工程师</td>
-                                                    <td class="text-center">张鹏</td>
-                                                    <td class="text-center">2018-5-10</td>
-                                                    <td class="text-center">否</td>
-                                                    <td class="text-center">是</td>
-                                                    <td class="text-center">已通过</td>
-                                                    <td class="text-center">否</td>
-                                                    <td class="text-center">是</td>
-                                                    <td class="text-left w170">
-                                                        <a href="" class="mr10">查看</a>
-                                                        <a href="" class="mr10">发布</a>
-                                                        <a href="" class="mr10">移交</a>
-                                                        <a href="" class="mr10">启用</a>
-                                                        <a href="" class="mr10">停用</a>
-                                                        <a href="" >删除</a>
-                                                    </td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6">
-                                            <div  class="mt25 mb20 f18 text-left">
-                                                共计100条  增补20条  增编30条
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6 text-right ">
-                                            <div class="dataTables_paginate paging_bs_full" id="datatable_paginate">
-                                                <ul class="pagination">
-                                                    <li class="disabled">
-                                                        <a tabindex="0" class="paginate_button first" id="datatable_first">第一页</a>
-                                                    </li>
-                                                    <li class="disabled">
-                                                        <a tabindex="0" class="paginate_button previous" id="datatable_previous">上一页</a>
-                                                    </li>
-                                                    <li><a tabindex="0">1</a></li>
-                                                    <li><a tabindex="0">2</a></li>
-                                                    <li><a tabindex="0">3</a></li>
-                                                    <li><a tabindex="0">4</a></li>
-                                                    <li><a tabindex="0">5</a></li>
-                                                    <li><a tabindex="0">6</a></li>
-                                                    <li><a tabindex="0">7</a></li>
-                                                    <li><a tabindex="0">8</a></li>
-                                                    <li><a tabindex="0">9</a></li>
-                                                    <li><a tabindex="0">10</a></li>
-                                                    <li><a tabindex="0" class="paginate_button next" id="datatable_next">下一页</a></li>
-                                                    <li><a tabindex="0" class="paginate_button last" id="datatable_last">最后一页</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                                </div>
+                                <div class="pull-left text-right ">
+                                    <div class="dataTables_paginate paging_bs_full" id="datatable_paginate">
+                                        <ul class="pagination">
+                                            <li class="disabled">
+                                                <a tabindex="0" class="paginate_button first" id="datatable_first">第一页</a>
+                                            </li>
+                                            <li class="disabled">
+                                                <a tabindex="0" class="paginate_button previous" id="datatable_previous">上一页</a>
+                                            </li>
+                                            <li><a tabindex="0">1</a></li>
+                                            <li><a tabindex="0">2</a></li>
+                                            <li><a tabindex="0">3</a></li>
+                                            <li><a tabindex="0">4</a></li>
+                                            <li><a tabindex="0">5</a></li>
+                                            <li><a tabindex="0">6</a></li>
+                                            <li><a tabindex="0">7</a></li>
+                                            <li><a tabindex="0">8</a></li>
+                                            <li><a tabindex="0">9</a></li>
+                                            <li><a tabindex="0" class="paginate_button next" id="datatable_next">下一页</a></li>
+                                            <li><a tabindex="0" class="paginate_button last" id="datatable_last">最后一页</a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <!-- Page End here -->
                 </div>
                 <!-- End .outlet -->
@@ -557,7 +538,7 @@
             <!-- /.modal-dialog -->
         </div>
         <!-- /.modal -->
-        <!-- Modal 启用 -->
+        <!-- Modal 禁用 -->
         <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">

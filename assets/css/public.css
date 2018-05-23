@@ -1,3 +1,7 @@
+html{
+    font-family: Helvetica Neue,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif,sans-serif,fantasy,cursive;
+    font-size: 62.5%;
+}
 body {
     overflow-x: hidden;
     min-height: 100%;
@@ -8,7 +12,7 @@ body {
     -webkit-transition: -webkit-transform 0.4s ease !important;
     transition: transform 0.4s ease !important;
     position: relative;
-    font-family: Helvetica Neue,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif,sans-serif,fantasy,cursive;
+    font-size: 14px;
 }
 body.stop-scrolling {
     height: 100%;
@@ -29,26 +33,10 @@ a:hover{
 }
 /* ------------------ Sizes --------------------*/
 .f18{
-    font-size:18px;
-}
-
-.vat {
-    vertical-align: top !important;
-}
-.vam {
-    vertical-align: middle !important;
-}
-.vab {
-    vertical-align: bottom !important;
+    font-size:1.8rem;
 }
 /* ------------------ Margins --------------------*/
-.row.no-padding {
-    margin-left: 0;
-    margin-right: 0;
-}
-.row.no-padding [class^="col-"] {
-    padding: 0;
-}
+
 .m20 {
     margin: 20px !important;
 }
@@ -144,23 +132,17 @@ a:hover{
 .ml100{
     margin-left: 100px;
 }
-/*------------------color---------------------*/
-.color-red{
-
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
 }
+/*------------------color---------------------*/
 .label-star{
     display: inline-block;
     color:rgba(244,21,33,1);
     width: 10px;
-
 }
 /* ------------------ Typo --------------------*/
-.strong {
-    font-weight: bold;
-}
-.uppercase {
-    text-transform: uppercase;
-}
 .normal {
     font-weight: normal;
 }
@@ -191,13 +173,16 @@ a:hover{
 /*logo*/
 #header .navbar .navbar-logo {
     display: inline-block;
-    padding-top:23px;
+    margin-top:22px;
+    margin-left:30px;
+}
+#header .navbar .navbar-logo img{
     width: 169px;
-    margin-left:47px;
+    height: 46px;
 }
 .top-nav{
-    margin-top: 20px;
-    margin-right:43px;
+    margin-top: 22px;
+    margin-right:30px;
 }
 #header .navbar .nav li{
     margin-left: 10px;
@@ -214,7 +199,7 @@ a:hover{
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     overflow-x: hidden;
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
     outline: none;
 }
@@ -243,29 +228,28 @@ a:hover{
     height: 5px;
 }
 .btn-account{
-    margin-top: 8px;
+    margin-top: 10px;
     margin-left: 5px;
 }
 .btn-account .btn-sm{
     padding:3px 10px;
-    font-size:18px;
-    border-radius: 5px;
+    font-size:14px;
+    border-radius:5px;
 }
-
 /*组织架构后台header*/
 .group-nav{
     float: left;
     position: relative;
     left:50%;
-    margin-left:-600px;
+    margin-left:-480px;
     bottom:0;
 }
 .group-nav a{
     display: inline-block;
-    font-size: 22px;
-    color: #999999;
-    margin:49px 45px 0 45px;
-    padding-bottom:9px;
+    font-size: 16px;
+    color: #666666;
+    margin:50px 15px 0 15px;
+    padding:0 10px 15px 10px;
     border-bottom:2px solid transparent;
 }
 .group-nav a:hover{
@@ -282,7 +266,7 @@ a:hover{
    Sidebar styles
 ----------------------------------------- */
 #sidebar {
-    width: 300px;
+    width: 240px;
     height: auto;
     position: absolute;
     left: 0;
@@ -299,7 +283,7 @@ a:hover{
     top: 0;
     left: 0;
     bottom: 0;
-    width: 300px;
+    width: 240px;
     background:rgba(52,52,52,1);
     z-index: -1;
 }
@@ -314,24 +298,22 @@ a:hover{
     margin-top: 0;
 }
 #sidebar #sideNav li:first-child a{
-    padding: 30px 15px 30px 90px;
+    padding: 20px 15px 15px 50px  ;
 }
-
 #sidebar #sideNav li a {
-    font-size: 24px;
-    padding: 30px 15px 30px 64px;
+    font-size: 18px;
+    padding: 20px 15px 15px 50px;
     position: relative;
     color: #768399;
-    height: 80px;
     border-radius: 0;
-    background:rgba(52,52,52,1);
+    background:#343434;
     -webkit-transition: background;
     transition: background;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
 }
 #sidebar #sideNav li a i {
-    font-size: 34px;
+    font-size: 24px;
     margin-right: 15px;
     float: left;
     color: #ffffff;
@@ -347,9 +329,6 @@ a:hover{
     margin-right: 0;
     margin-left: 5px;
 }
-#sidebar #sideNav li a i.s16 {
-    right: 17px;
-}
 #sidebar #sideNav li a .notification {
     display: none;
 }
@@ -362,7 +341,7 @@ a:hover{
     text-shadow: none;
 }
 #sidebar #sideNav li a.expand {
-    background:rgba(52,52,52,1);
+    background:#343434
 }
 #sidebar #sideNav li a.expand i {
     color: #fc3f2b;
@@ -371,19 +350,19 @@ a:hover{
     display: none;
 }
 #sidebar #sideNav li .sub a {
-    font-size: 20px;
-    background:rgba(52,52,52,1);
-    padding-left:75px;
-    border-right: 6px solid transparent;
+    font-size: 16px;
+    background:#343434;
+    padding-left:65px;
+    border-right: 3px solid transparent;
 }
 #sidebar #sideNav li .sub a.active {
-    background:rgba(77,77,77,1);
+    background:#4D4D4D;
     font-weight: normal;
-    border-right:6px solid  rgba(244,81,56,1);
+    border-right:3px solid  rgba(244,81,56,1);
 }
 #sidebar #sideNav li .sub a:hover {
-    background:rgba(77,77,77,1);
-    border-right:6px solid  rgba(244,81,56,1);
+    background:#4D4D4D;
+    border-right:3px solid  rgba(244,81,56,1);
 }
 
 /* -----------------------------------------
@@ -393,92 +372,49 @@ a:hover{
     margin-left: 0;
     padding-top:90px;
 }
-.m56{
-    margin:70px 56px 0 56px;
-}
 #content {
-    margin-left: 300px;
-    padding-top:90px;
+    margin-left: 240px;
+    padding-top: 90px;
 }
 #content.sidebar-page {
-    margin-left: 300px;
+    margin-left: 240px;
 }
-#content.full-page {
-    margin-left: 0;
-}
-#content.offCanvas {
-    width: 100%;
-    margin-left: 300px;
-}
-#content.overLap {
-    margin-left: 0;
-}
+
 #content .content-wrapper {
     height: auto;
     float: left;
     width: 100%;
     position: relative;
 }
-#content .content-wrapper .outlet {
+#content .content-wrapper .pages {
     position: relative;
-    padding: 0 43px;
+    padding: 0 20px 30px 20px;
 }
-#content .content-wrapper .heading:before,
-#content .content-wrapper .heading:after {
-    content: " ";
-    display: table;
+.working-pages{
+    margin: 30px 20px;
 }
-#content .content-wrapper .heading:after {
-    clear: both;
-}
-#content .content-wrapper .heading h1.page-header {
-    font-size: 24px;
-    border-bottom: none;
-    padding: 0;
-    background: #ffffff;
-    font-weight: 300;
-    width: auto;
-}
-#content .content-wrapper .heading h1.page-header i {
-    font-size: 42px;
-    opacity: 0.1;
-    filter: alpha(opacity=10);
-    margin-right: 10px;
-    float: none;
-}
-#content .content-wrapper .heading h1.page-header [class*="icomoon-"] {
-    margin-top: -4px;
-}
-
 /*页面面包屑导航*/
 #content .content-wrapper .heading .breadcrumb {
     line-height: 20px;
     background: #fff;
-    padding: 20px 43px;
+    padding: 20px;
     margin-bottom: 0;
 }
 #content .content-wrapper .heading .breadcrumb i {
     color: #acb1b8;
-    font-size: 26px;
+    font-size: 18px;
     padding: 0 5px;
     margin-top: -3px;
 }
-
 #content .content-wrapper .heading .breadcrumb > li {
     display: inline-block;
-    font-size:22px;
-}
-#content .content-wrapper .heading .breadcrumb > li:nth-child(2){
-    font-size: 20px
-}
-#content .content-wrapper .heading .breadcrumb > li:nth-child(3){
-    font-size: 18px
+    font-size:16px;
+    color: #999999;
 }
 #content .content-wrapper .heading .breadcrumb > li + li:before {
     content: "";
     display: none;
 }
-
 /*footer*/
 .footer{
     position: inherit;

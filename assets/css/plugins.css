@@ -4241,7 +4241,7 @@ disabled look for disabled choices in the results dropdown
   height: 36px;
   padding: 0;
   line-height: 36px;
-  font-size: 18px;
+  font-size: 14px;
   color: white;
   font-family: Trebuchet, Arial, sans-serif;
   font-weight: normal;
@@ -4262,16 +4262,15 @@ disabled look for disabled choices in the results dropdown
   text-align: right;
 }
 .onoffswitch-switch {
-  width: 36px;
-  height: 37px;
-  margin: 0.5px;
+  width: 34px;
+  height: 34px;
+  margin: -2px;
   background: #ffffff;
-  border: 2px solid #FFFFFF;
   border-radius: 5px;
   position: absolute;
-  top: 0;
+  top: 5px;
   bottom: 0;
-  right: 38px;
+  right: 40px;
   -webkit-transition: all 0.3s ease-in 0s;
   transition: all 0.3s ease-in 0s;
 }
@@ -4279,7 +4278,7 @@ disabled look for disabled choices in the results dropdown
   margin-left: 0;
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-  right: 0;
+  right: 5px;
   background-color: #ffffff;
 }
 /* -----------------------------------------

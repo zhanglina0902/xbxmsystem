@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>招聘</title>
+    <title>招聘-基础设置</title>
     <!-- Mobile specific metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- Force IE9 to render in normal mode -->
@@ -36,11 +36,11 @@
                 </a>
             </div>
             <div class="group-nav">
-                <a href="" class="active">工作台</a>
-                <a href=""  >组织架构</a>
+                <a href="working.html" class="active">工作台</a>
+                <a href="" >组织架构</a>
                 <a href="" >员工管理</a>
                 <a href="" >角色权限</a>
-                <a href=""  >设置</a>
+                <a href="" >设置</a>
             </div>
             <nav class="top-nav" role="navigation">
                 <ul class="nav navbar-nav pull-right nav-right">
@@ -68,11 +68,10 @@
                 <a href="#" class="expand">招聘</a>
                 <ul class="nav sub" style="display: block">
                     <li><a href="recruit.html" class="active">基础设置</a></li>
-                    <li><a href="other-setting.html">其他设置</a></li>
+                    <li><a href="">其他设置</a></li>
                 </ul>
             </li>
         </ul>
-        <!-- End #sideNav -->
     </div>
 </div>
 <!-- End #sidebar -->
@@ -80,95 +79,86 @@
 <div id="content">
     <!-- Start .content-wrapper -->
     <div class="content-wrapper">
-        <div class="row heading">
-            <div class="col-lg-12 mt25">
-                <ul  class="breadcrumb p43">
-                    <li><a href="working.html">工作台</a><i class="en-arrow-right7"></i></li>
-                    <li><a href="">招聘</a><i class="en-arrow-right7"></i></li>
-                    <li>基础设置</li>
-                </ul>
-            </div>
+        <div class="heading">
+            <ul  class="breadcrumb">
+                <li><a href="working.html">工作台</a><i class="en-arrow-right7"></i></li>
+                <li><a href="">招聘</a><i class="en-arrow-right7"></i></li>
+                <li>基础设置</li>
+            </ul>
         </div>
         <!-- End .row -->
-        <div class="outlet">
-            <!-- Start .outlet -->
-            <!-- Page start here ( usual with .row ) -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="xm-contbox">
-                        <div class="xm-contbody">
-                            <div class="mt20 m43">
-                                <form class="form-horizontal new-add" role="form">
-                                    <div class="form-group mb30">
-                                        <label class="w160 control-label"><span class="label-star">*</span>模块LOGO</label>
-                                        <div class="clearfix">
-                                            <div class="upload-logo">
-                                                <canvas id="cvs" width="200" height="200"></canvas>
-                                                <span class="btn upload">上传LOGO<input type="file" class="upload_pic" id="upload" /></span>
-                                                <span class="tip-text">建议上传尺寸120*120</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group  mb30">
-                                        <label class="w160 control-label"><span class="label-star">*</span>模块名称</label>
-                                        <div class="clearfix">
-                                            <div class=" form-inline">
-                                                <input type="text" class="form-control  w460" placeholder="模块名称">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group mb30">
-                                        <label class=" w160 control-label"><span class="label-star">*</span>功能介绍</label>
-                                        <div class="clearfix">
-                                            <div class="form-inline">
-                                                <textarea class="form-control w460" rows="3" placeholder="功能介绍"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group  mb30">
-                                        <label class="w160 control-label"><span class="label-star">*</span>PC首页地址</label>
-                                        <div class="clearfix">
-                                            <div class="form-inline">
-                                                <input type="text" class="form-control  w460" placeholder="首页网址">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group  mb30">
-                                        <label class=" w160 control-label"><span class="label-star">*</span>移动端首页地址</label>
-                                        <div class="clearfix">
-                                            <div class="form-inline">
-                                                <input type="text" class="form-control  w460" placeholder=""渠道名称>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group  mb30">
-                                        <label class="w160 control-label"><span class="label-star" >*</span>可见范围</label>
-                                        <div class="clearfix">
-                                            <div class="form-inline">
-                                                <input type="text" class="form-control  w460" placeholder=" 选择部门和职工">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="w160 control-label"><span class="label-star"> </span>启用</label>
-                                        <div class="clearfix">
-                                            <div class="form-inline">
-                                                <input type="checkbox" class="switch noStyle" name="switch" id="switch" value="option1" checked>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group mt25">
-                                        <div class="ml160">
-                                            <button class="btn btn-primary w160 mr25" type="submit">确定</button>
-                                            <button class="btn btn-primary w160 " type="submit">取消</button>
-                                        </div>
-                                    </div>
-                                    <!-- End .form-group  -->
-                                </form>
+        <div class="pages">
+            <!-- Page start here  -->
+            <div class="xm-contbox mt25">
+                <div class="xm-contbody">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group form-recruit">
+                            <label class="control-label"><span class="label-star">*</span>模块LOGO</label>
+                            <div class="clearfix">
+                                <div class="upload-logo">
+                                    <canvas id="cvs" width="120" height="120"></canvas>
+                                    <span class="btn upload">上传LOGO<input type="file" class="upload_pic" id="upload" /></span>
+                                    <span class="tip-text">建议上传尺寸120*120</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="form-group form-recruit">
+                            <label class="control-label"><span class="label-star">*</span>模块名称</label>
+                            <div class="clearfix">
+                                <div class=" form-inline">
+                                    <input type="text" class="form-control" placeholder="模块名称">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-recruit">
+                            <label class=" w160 control-label"><span class="label-star">*</span>功能介绍</label>
+                            <div class="clearfix">
+                                <div class="form-inline">
+                                    <textarea class="form-control" rows="3" placeholder="功能介绍"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-recruit">
+                            <label class="control-label"><span class="label-star">*</span>PC首页地址</label>
+                            <div class="clearfix">
+                                <div class="form-inline">
+                                    <input type="text" class="form-control" placeholder="首页网址">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-recruit">
+                            <label class="control-label"><span class="label-star">*</span>移动端首页地址</label>
+                            <div class="clearfix">
+                                <div class="form-inline">
+                                    <input type="text" class="form-control" placeholder="渠道名称">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-recruit">
+                            <label class="control-label"><span class="label-star" >*</span>可见范围</label>
+                            <div class="clearfix">
+                                <div class="form-inline">
+                                    <input type="text" class="form-control" placeholder=" 选择部门和职工">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group form-recruit">
+                            <label class="control-label"><span class="label-star"> </span>启用</label>
+                            <div class="clearfix">
+                                <div class="form-inline">
+                                    <input type="checkbox" class="switch noStyle" name="switch" id="switch" value="option1" checked>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group form-recruit">
+                            <div class="form-btn">
+                                <button class="btn btn-primary" type="submit">确定</button>
+                                <button class="btn btn-default " type="submit">取消</button>
+                            </div>
+                        </div>
+                        <!-- End .form-group  -->
+                    </form>
                 </div>
             </div>
             <!-- Page End here -->

@@ -133,6 +133,8 @@ $(document).ready(function() {
     //------------- Bootstrap popovers -------------//
     $("[data-toggle=popover]").popover ();
 
-    //------------- Qick post wysiwyg editor and tags -------------//
+   //--------身份切换---------//
+
+
 
 });

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>notification</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="用人申请列表页" transform="translate(-1584.000000, -33.000000)">
+            <g id="Group-8" transform="translate(1584.000000, 33.000000)">
+                <g id="notification">
+                    <path d="M13,26 C14.4142857,26 15.5714286,24.875 15.5714286,23.5 L10.4285714,23.5 C10.4285714,24.875 11.5857143,26 13,26 L13,26 Z" id="Path" fill="#F45138" opacity="0.380774457"></path>
+                    <path d="M4,21 L22,21" id="Line" stroke="#F45138" stroke-width="2.57142857" stroke-linecap="round"></path>
+                    <path d="M6.57142857,17.25 L6.57142857,11.0094301 C6.57142857,7.55244233 9.45682239,4.75 13,4.75 C16.550402,4.75 19.4285714,7.54347459 19.4285714,11.0094301 L19.4285714,17.25" id="Rectangle-93" stroke="#F45138" stroke-width="2.57142857" stroke-linecap="round"></path>
+                    <rect id="Rectangle-4" fill="#F45138" x="11.7142857" y="1" width="2.57142857" height="3.75" rx="1.28571429"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
