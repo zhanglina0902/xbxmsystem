@@ -137,7 +137,12 @@ a:hover{
 }
 .form-group{
     display: flex;
-
+}
+.m43{
+    margin-left: 43px;
+}
+.ml100{
+    margin-left: 100px;
 }
 /*------------------color---------------------*/
 .color-red{

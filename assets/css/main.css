@@ -234,7 +234,6 @@
 }
 .form-horizontal.new-add .control-label{
   text-align: left;
-  margin-left:43px;
   font-size: 18px;
   font-weight: normal;
 }
@@ -313,8 +312,9 @@
   margin-bottom: 20px;
 }
 .taginputbox input{
-  width: auto;
+  width: 170px;
   display: inline-block;
+  text-align: center;
 }
 .taginputbox .im-minus{
   position: absolute;
