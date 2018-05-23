@@ -193,7 +193,7 @@
                                     <div class="row">
                                         <div class="col-lg-12 clearfix">
                                             <div class="mb20 pull-left xm-allbutton">
-                                                <a type="button" class="btn btn-primary btn-alt">新增</a>
+                                                <a type="button" class="btn btn-primary btn-alt" data-toggle="modal" data-target="#NewmyModal">新增</a>
                                                 <a type="button" class="btn btn-primary btn-alt">批量启用</a>
                                                 <a type="button" class="btn btn-primary btn-alt">批量禁用</a>
                                                 <a type="button" class="btn btn-primary btn-alt">批量删除</a>
@@ -572,6 +572,21 @@
             <!-- /.modal-dialog -->
         </div>
         <!-- /.modal -->
+
+        <!-- Modal 删除弹出层 -->
+        <div class="modal fade" id="NewmyModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body new-modalbtn">
+                        <a  href="Apply.html" type="button" class="btn btn-primary">模板</a>
+                        <a  type="button" class="btn btn-primary">自定义</a>
+                    </div>
+
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
         <!-- Important javascript libs(put in all pages) -->
         <script src="assets/js/jquery-1.8.3.min.js"></script>
         <script src="assets/js/jquery-ui.js"></script>
@@ -594,7 +609,7 @@
         <script src="assets/plugins/forms/datetimepicker/bootstrap-datetimepicker.min.js"></script>
 
         <script src="assets/js/jquery.sprFlat.js"></script>
-        <script src="assets/js/app.js"></script>
+        <script src="assets/js/base.js"></script>
         <script src="assets/js/pages/forms.js"></script>
 
 
