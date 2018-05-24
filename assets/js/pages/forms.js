@@ -12,7 +12,7 @@ $(document).ready(function() {
 		format: "yyyy MM dd",
 		autoclose: true,
 		todayBtn: true,
-		pickerPosition: "bottom-left",
+		pickerPosition: "bottom-right",
 		minView:2
 	});
 	//------------- Switches -------------//

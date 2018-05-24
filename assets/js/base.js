@@ -18,13 +18,6 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 $(document).ready(function() {
 
 
- 	//Disable certain links
-    $('a[href^=#]').click(function (e) {
-        e.preventDefault()
-    });
-
-    //------------- Highlight code  -------------//
-    hljs.initHighlightingOnLoad();
 
  	//------------- Init our plugin -------------//
  	$('body').sprFlat({

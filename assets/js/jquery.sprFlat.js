@@ -156,7 +156,7 @@
             this.toggleHeaderArea();
             //chat window basic functions
             this.chatWindow();
-            
+
             //fixed header
             if(plugin.settings.header.fixed) {
                 this.fixedHeader(true);
@@ -216,7 +216,7 @@
                 this.backToTop();
             }
 
-            
+
             //call center modal function after modal is show
             $('.modal').on('show.bs.modal', function (e) {
                 //center modal
@@ -247,7 +247,7 @@
                 //center bootstrap modal
                 plugin.centerModal();
             });
-        }   
+        }
 
         //get breakpoint
         plugin.getBreakPoint = function () {
@@ -294,15 +294,15 @@
                     height: '100%',
                     distance: '0',
                     railVisible: false,
-                    size: plugin.settings.customScroll.size,                    
-                    color: plugin.settings.customScroll.color,                    
+                    size: plugin.settings.customScroll.size,
+                    color: plugin.settings.customScroll.color,
                     railOpacity: plugin.settings.customScroll.opacity,
                     railColor: plugin.settings.customScroll.railColor
                 });
             } else {
                 $('#sidebar').removeClass('sidebar-fixed');
                 //deactivate slim scroll
-                $('.sidebar-inner').parent().replaceWith($('.sidebar-inner')); 
+                $('.sidebar-inner').parent().replaceWith($('.sidebar-inner'));
                 $('.sidebar-inner').attr('style', '');
             }
         }
@@ -319,17 +319,17 @@
                     } else {
                         btnIcon.transition({rotate: '0deg'});
                     }
-                    //need to parse actual width        
+                    //need to parse actual width
                     hw =  $('#header-area>').width();
                     hwbutton = $('.shortcut-button a').outerWidth();
-                    elcount = $('#header-area>.header-area-inner>ul li').length +1;                
+                    elcount = $('#header-area>.header-area-inner>ul li').length +1;
                     actualWidht = hwbutton * elcount + elcount*2 + elcount*10 +30;
                     if (hw <= actualWidht) {
                         $('#header-area>.header-area-inner>.list-unstyled').css('width', actualWidht);
                     }
                     $('#header-area>.header-area-inner').slimScrollHorizontal({
-                        size: plugin.settings.customScroll.size,                    
-                        color: plugin.settings.customScroll.color,                    
+                        size: plugin.settings.customScroll.size,
+                        color: plugin.settings.customScroll.color,
                         railOpacity: plugin.settings.customScroll.opacity,
                         railColor: plugin.settings.customScroll.railColor,
                         width: '100%',
@@ -1261,7 +1261,7 @@ this.bind("mousewheel",fn):this.trigger("mousewheel")},unmousewheel:function(fn)
             }
         }
 
-        //email app 
+        //email app
         plugin.emailApp = function () {
             var eside = $('#email-sidebar');
             var econtent = $('#email-content');
