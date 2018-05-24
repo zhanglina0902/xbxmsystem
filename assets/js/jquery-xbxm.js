@@ -1,4 +1,4 @@
-// jQuery Plugin for SprFlat admin template
+// jQuery Plugin for xbxm admin template
 // Control options and basic function of template
 // version 1.0, 28.02.2013
 // by SuggeElson www.suggeelson.com
@@ -6,7 +6,7 @@
 (function($) {
 
     // here we go!
-    $.sprFlat = function(element, options) {
+    $.xbxm = function(element, options) {
 
         // plugin's default options
         var defaults = {
@@ -128,8 +128,6 @@
                 $.fn.transition = $.fn.animate;
             }
 
-            //respondjs handle responsive view
-            this.respondjs();
             //activate storejs plugin
             this.storejs();
             //activate mousewheel plugin
@@ -216,7 +214,6 @@
                 this.backToTop();
             }
 
-
             //call center modal function after modal is show
             $('.modal').on('show.bs.modal', function (e) {
                 //center modal
@@ -233,14 +230,9 @@
             //hover direction plugin
             this.hoverDirection();
 
-            //email ap
-            this.emailApp();
 
             //------------- Click events -------------//
-            //full screen
-            $('a.full-screen').click(function(el) {
-                plugin.launchFullScreen();
-            });
+
 
             //------------- Resize evetns -------------//
             $(window).resize(function() {
@@ -305,44 +297,13 @@
                 $('.sidebar-inner').parent().replaceWith($('.sidebar-inner'));
                 $('.sidebar-inner').attr('style', '');
             }
-        }
+        };
 
         //toggle header area
         plugin.toggleHeaderArea = function () {
             var btn = $('#toggle-header-area');
             var btnIcon = btn.find('i');
-            $(document).click(function(e) {
-                if($(e.target).parent('#toggle-header-area').length > 0) {
-                    $('#header-area').toggleClass('show-header-area animated');
-                    if($('#header-area').hasClass('show-header-area')) {
-                        btnIcon.transition({rotate: '-180deg'});
-                    } else {
-                        btnIcon.transition({rotate: '0deg'});
-                    }
-                    //need to parse actual width
-                    hw =  $('#header-area>').width();
-                    hwbutton = $('.shortcut-button a').outerWidth();
-                    elcount = $('#header-area>.header-area-inner>ul li').length +1;
-                    actualWidht = hwbutton * elcount + elcount*2 + elcount*10 +30;
-                    if (hw <= actualWidht) {
-                        $('#header-area>.header-area-inner>.list-unstyled').css('width', actualWidht);
-                    }
-                    $('#header-area>.header-area-inner').slimScrollHorizontal({
-                        size: plugin.settings.customScroll.size,
-                        color: plugin.settings.customScroll.color,
-                        railOpacity: plugin.settings.customScroll.opacity,
-                        railColor: plugin.settings.customScroll.railColor,
-                        width: '100%',
-                        positon: 'bottom',
-                        start: 'left',
-                        railVisible: true,
-                        distance: "0px",
-                    });
-                } else {
-                    $('#header-area').removeClass('show-header-area');
-                    btnIcon.transition({rotate: '0deg'});
-                }
-            });
+
         }
 
         //toggle sidebar
@@ -432,21 +393,9 @@
                 }                
             }
             toggleIcon.transition({rotate: '0deg'});            
-        }
+        };
 
-        //toggle right sidebar
-        plugin.toggleRightSidebar = function() {
-            var toggleButton = $('#toggle-right-sidebar');
-            toggleButton.on("click", function(e){ 
-                e.preventDefault();
-                $('#right-sidebar').toggleClass('hide-sidebar');
-                if($('#content').hasClass('rightSidebar-page')) {
-                    $('#content').removeClass('rightSidebar-page');
-                } else {
-                    $('#content').addClass('rightSidebar-page');
-                }
-            });
-        }
+
 
         plugin.sideBarNav = function() {
             //cache the elements
@@ -1125,66 +1074,7 @@ this.bind("mousewheel",fn):this.trigger("mousewheel")},unmousewheel:function(fn)
             !function(a){function b(a){switch(a){case 0:return"top";case 1:return"right";case 2:return"bottom";case 3:return"left"}}function c(c){var d=a(this),e=d.height(),f=d.width(),g=(c.pageX-d.offset().left-f/2)*(f>e?e/f:1),h=(c.pageY-d.offset().top-e/2)*(e>f?f/e:1),i=Math.round((Math.atan2(h,g)*(180/Math.PI)+180)/90+3)%4,k=j.cssPrefix,l="mouseleave"===c.type?"leave":"enter",m=b(i);return k+"-"+l+"-"+m}function d(b){var d=c.apply(this,[b]);a(this).addClass(d)}function e(){a(this).removeClass(function(a,b){return(b.match(g)||[]).join(" ")})}function f(a){e.apply(this),d.apply(this,[a])}var g,h="hoverDirection",i={cssPrefix:"hover"},j={},k={init:function(b){return j=a.extend(i,b),g=new RegExp("\\"+j.cssPrefix+"\\S+","g"),this.each(function(){a(this).on("mouseenter mouseleave",f)})},removeClass:function(){return e.apply(this),this},destroy:function(){return e.apply(this),this.each(function(){a(this).off("mouseenter mouseleave",f)})}};a.fn[h]=function(b){return k[b]?k[b].apply(this,Array.prototype.slice.call(arguments,1)):"object"!=typeof b&&b?void a.error("Method "+b+" does not exist on jQuery."+h):k.init.apply(this)}}(jQuery,window,document);
         }
 
-        //respondjs plugin
-        plugin.respondjs = function () {
 
-            // call jRespond and add breakpoints
-            var jRes = jRespond([
-                {
-                    label: 'phone',
-                    enter: 0,
-                    exit: 767
-                },{
-                    label: 'tablet',
-                    enter: 768,
-                    exit: 979
-                },{
-                    label: 'laptop',
-                    enter: 980,
-                    exit: 1366
-                },{
-                    label: 'large',
-                    enter: 1367,
-                    exit: 10000
-                }
-            ]);
-            // register enter and exit functions for a single breakpoint
-            jRes.addFunc({
-                breakpoint: 'laptop',
-                enter: function() {
-                    plugin.showLeftSidebar();
-                },
-                exit: function() {
-                    
-                }
-            });
-            jRes.addFunc({
-                breakpoint: 'tablet',
-                enter: function() {
-                    plugin.hideLeftSidebar();
-                    plugin.collapseEmailAppSidebar();
-                },
-                exit: function() {
-                    plugin.showLeftSidebar();
-                    plugin.expandEmailAppSidebar();
-                }
-            });
-            jRes.addFunc({
-                breakpoint: 'phone',
-                enter: function() {
-                    plugin.hideLeftSidebar();
-                    plugin.dropdownMenuFix();
-                    plugin.collapseEmailAppSidebar();
-                    $('#email-content').addClass('email-content-offCanvas');
-                },
-                exit: function() {
-                    plugin.showLeftSidebar();
-                    $('#email-content').removeClass('email-content-offCanvas');
-                }
-            });
-
-            return jRes;
-        }
 
         //fix dropdown menu ot top navigation in small screens
         plugin.dropdownMenuFix = function () {
@@ -1214,6 +1104,8 @@ this.bind("mousewheel",fn):this.trigger("mousewheel")},unmousewheel:function(fn)
                         }
                     },
                 });
+
+
             }     
 
             //quick search on chat users
@@ -1261,49 +1153,8 @@ this.bind("mousewheel",fn):this.trigger("mousewheel")},unmousewheel:function(fn)
             }
         }
 
-        //email app
-        plugin.emailApp = function () {
-            var eside = $('#email-sidebar');
-            var econtent = $('#email-content');
 
-            $("#email-toggle").click(function(){
-                if ($(this).hasClass('pushed')) {
-                    $(this).removeClass('pushed');
-                    eside.removeClass('email-sidebar-hide');
-                    eside.addClass('email-sidebar-show');
-                    econtent.removeClass('email-content-expand');
-                    econtent.addClass('email-content-contract');
-                } else {
-                    $(this).addClass('pushed');
-                    eside.removeClass('email-sidebar-show');
-                    eside.addClass('email-sidebar-hide');
-                    econtent.removeClass('email-content-contract');
-                    econtent.addClass('email-content-expand');
-                }
-            });
-        }
 
-        //collapse email sidbear
-        plugin.collapseEmailAppSidebar = function () {
-            var eside = $('#email-sidebar');
-            var econtent = $('#email-content');
-            eside.removeClass('email-sidebar-show');
-            eside.addClass('email-sidebar-hide');
-            econtent.removeClass('email-content-contract');
-            econtent.addClass('email-content-expand');
-            $("#email-toggle").addClass('pushed');
-        }
-
-        //expand email sidbear
-        plugin.expandEmailAppSidebar = function () {
-            var eside = $('#email-sidebar');
-            var econtent = $('#email-content');
-            eside.removeClass('email-sidebar-hide');
-            eside.addClass('email-sidebar-show');
-            econtent.removeClass('email-content-expand');
-            econtent.addClass('email-content-contract');
-            $("#email-toggle").removeClass('pushed');
-        }
 
         //animation for dropdown menus
         plugin.dropdownMenuAnimations = function () {
@@ -1331,22 +1182,22 @@ this.bind("mousewheel",fn):this.trigger("mousewheel")},unmousewheel:function(fn)
     }
 
     // add the plugin to the jQuery.fn object
-    $.fn.sprFlat = function(options) {
+    $.fn.xbxm = function(options) {
 
         // iterate through the DOM elements we are attaching the plugin to
         return this.each(function() {
 
             // if plugin has not already been attached to the element
-            if (undefined == $(this).data('sprFlat')) {
+            if (undefined == $(this).data('xbxm')) {
 
                 // create a new instance of the plugin
                 // pass the DOM element and the user-provided options as arguments
-                var plugin = new $.sprFlat(this, options);
+                var plugin = new $.xbxm(this, options);
 
                 // store a reference to the plugin object
-                // element.data('sprFlat').publicMethod(arg1, arg2, ... argn) or
-                // element.data('sprFlat').settings.propertyName
-                $(this).data('sprFlat', plugin);
+                // element.data('xbxm').publicMethod(arg1, arg2, ... argn) or
+                // element.data('xbxm').settings.propertyName
+                $(this).data('xbxm', plugin);
 
             }
 

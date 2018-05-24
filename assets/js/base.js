@@ -1,45 +1,10 @@
-// make console.log safe to use
-window.console||(console={log:function(){}});
-
-//Internet Explorer 10 in Windows 8 and Windows Phone 8 fix
-if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-  var msViewportStyle = document.createElement('style');
-  msViewportStyle.appendChild(
-    document.createTextNode(
-      '@-ms-viewport{width:auto!important}'
-    )
-  );
-  document.querySelector('head').appendChild(msViewportStyle)
-};
-
-
 
 //doc ready function
 $(document).ready(function() {
 
-
-
  	//------------- Init our plugin -------------//
- 	$('body').sprFlat({
+ 	$('body').xbxm({
         //main color scheme for template
-        //be sure to be same as colors on main.css or custom-variables.less
-        colors : {
-            white: '#fff',
-            dark: '#79859b',
-            red: '#f68484',
-            blue: '#75b9e6',
-            green: '#71d398',
-            yellow: '#ffcc66',
-            orange: '#f4b162',
-            purple: '#af91e1',
-            pink: '#f78db8',
-            lime: '#a8db43',
-            mageta: '#eb45a7',
-            teal: '#97d3c5',
-            black: '#000',
-            brown: '#d1b993',
-            gray: '#f3f5f6'
-        },
         customScroll: {
             color: '#999', //color of custom scroll
             railColor: '#eee', //color of rail
@@ -112,22 +77,6 @@ $(document).ready(function() {
             openEffect: 'fadeInDown',//open effect for menu see http://daneden.github.io/animate.css/
         }
  	});
-
-    //get settings object
-    var sprObject = $('body').data('sprFlat');
-    var settings = sprObject.settings;
-
-    //------------- Bootstrap tooltips -------------//
-    $("[data-toggle=tooltip]").tooltip ({container:'body'});
-    $(".tip").tooltip ({placement: 'top', container: 'body'});
-    $(".tipR").tooltip ({placement: 'right', container: 'body'});
-    $(".tipB").tooltip ({placement: 'bottom', container: 'body'});
-    $(".tipL").tooltip ({placement: 'left', container: 'body'});
-    //------------- Bootstrap popovers -------------//
-    $("[data-toggle=popover]").popover ();
-
-   //--------身份切换---------//
-
 
 
 });
